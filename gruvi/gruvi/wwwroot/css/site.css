@@ -1,0 +1,105 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; /* Ajusta según tu diseño */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+    .logo-img {
+        width: 80px;
+        height: auto;
+        max-height: 70px;
+        margin-right: 20px;
+    }
+
+    /* Ocultar el logo oscuro por defecto */
+    .logo .nm {
+        display: none;
+    }
+
+/* Mostrar el logo oscuro si hay modo oscuro activado */
+.dark-mode .logo .nm {
+    display: block;
+}
+
+.dark-mode .logo .om {
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Ajusta según tu diseño */
+    font-size: 18px;
+}
+
+/* Contenedor de los botones */
+.nav-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos generales de los botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botón de "Iniciar sesión" */
+.btn-outline {
+    background: transparent;
+    color: #16a085;
+    border: 2px solid #16a085;
+}
+
+/* Botón de "Crear Sesión" */
+.btn-filled {
+    background: #16a085;
+    color: white;
+    border: 2px solid #16a085;
+}
+
+/* Efecto al pasar el mouse */
+.btn:hover {
+    opacity: 0.8;
+}
+
+

@@ -1,0 +1,49 @@
+﻿@page
+@model NosotrosModel
+@{
+    ViewData["Title"] = "Nosotros | GRUVi";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <partial name="_Header" />
+
+    <section class="ji gp uq">
+        <div class="bb ze rj ki xn vq">
+            <h2 class="fk vj pr kk wm on/5 gq/2">Nosotros | GRUVi</h2>
+        </div>
+
+        <div class="contenedor">
+            <link rel="stylesheet" href="~/css/nosotros.css">
+            <div class="texto">
+                <p>GRUVi es una agencia de viajes ubicada en Monterrey N.L., especializada en la venta de boletos de autobús para destinos nacionales.</p>
+                <p>GRUVi se distingue por ofrecer precios competitivos y promociones exclusivas...</p>
+            </div>
+            <div class="imagen">
+                <img src="~/images/2_img.jpeg" alt="Imagen de ejemplo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Secciones de valores, visión y misión -->
+    <div class="bb ye ki xn vq jb jo">
+        <div class="wc qf pn xo zf iq">
+            <partial name="_Valores" />
+            <partial name="_Vision" />
+            <partial name="_Mision" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+  
+</body>
+</html>
+

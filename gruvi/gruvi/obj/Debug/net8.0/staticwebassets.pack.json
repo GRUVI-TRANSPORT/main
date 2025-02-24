@@ -1,0 +1,565 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\gruvi.bundle.scp.css",
+      "PackagePath": "staticwebassets\\gruvi.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\nosotros.css",
+      "PackagePath": "staticwebassets\\css\\nosotros.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\1_img.png",
+      "PackagePath": "staticwebassets\\images\\1_img.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\2_img.jpeg",
+      "PackagePath": "staticwebassets\\images\\2_img.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\404.svg",
+      "PackagePath": "staticwebassets\\images\\404.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\about-01.png",
+      "PackagePath": "staticwebassets\\images\\about-01.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\about-02.png",
+      "PackagePath": "staticwebassets\\images\\about-02.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\about-03.png",
+      "PackagePath": "staticwebassets\\images\\about-03.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-01.png",
+      "PackagePath": "staticwebassets\\images\\blog-01.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-02.png",
+      "PackagePath": "staticwebassets\\images\\blog-02.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-03.png",
+      "PackagePath": "staticwebassets\\images\\blog-03.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-04.png",
+      "PackagePath": "staticwebassets\\images\\blog-04.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-05.png",
+      "PackagePath": "staticwebassets\\images\\blog-05.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-big.png",
+      "PackagePath": "staticwebassets\\images\\blog-big.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-small-01.png",
+      "PackagePath": "staticwebassets\\images\\blog-small-01.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-small-02.png",
+      "PackagePath": "staticwebassets\\images\\blog-small-02.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\blog-small-03.png",
+      "PackagePath": "staticwebassets\\images\\blog-small-03.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-01.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-01.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-02.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-03.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-03.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-04.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-04.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-05.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-05.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-dark-06.svg",
+      "PackagePath": "staticwebassets\\images\\brand-dark-06.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-01.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-01.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-02.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-03.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-03.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-04.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-04.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-05.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-05.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\brand-light-06.svg",
+      "PackagePath": "staticwebassets\\images\\brand-light-06.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-01.svg",
+      "PackagePath": "staticwebassets\\images\\icon-01.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-02.svg",
+      "PackagePath": "staticwebassets\\images\\icon-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-03.svg",
+      "PackagePath": "staticwebassets\\images\\icon-03.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-04.svg",
+      "PackagePath": "staticwebassets\\images\\icon-04.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-05.svg",
+      "PackagePath": "staticwebassets\\images\\icon-05.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-06.svg",
+      "PackagePath": "staticwebassets\\images\\icon-06.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-07.svg",
+      "PackagePath": "staticwebassets\\images\\icon-07.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-calender.svg",
+      "PackagePath": "staticwebassets\\images\\icon-calender.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-man.svg",
+      "PackagePath": "staticwebassets\\images\\icon-man.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-moon.svg",
+      "PackagePath": "staticwebassets\\images\\icon-moon.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-play.svg",
+      "PackagePath": "staticwebassets\\images\\icon-play.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\icon-quote.svg",
+      "PackagePath": "staticwebassets\\images\\icon-quote.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\logo-dark.svg",
+      "PackagePath": "staticwebassets\\images\\logo-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\logo-light.svg",
+      "PackagePath": "staticwebassets\\images\\logo-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\logotipo.png",
+      "PackagePath": "staticwebassets\\images\\logotipo.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\mision.png",
+      "PackagePath": "staticwebassets\\images\\mision.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\project-01.png",
+      "PackagePath": "staticwebassets\\images\\project-01.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\project-02.png",
+      "PackagePath": "staticwebassets\\images\\project-02.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\project-03.png",
+      "PackagePath": "staticwebassets\\images\\project-03.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\project-04.png",
+      "PackagePath": "staticwebassets\\images\\project-04.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-01.svg",
+      "PackagePath": "staticwebassets\\images\\shape-01.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-02.svg",
+      "PackagePath": "staticwebassets\\images\\shape-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-03.svg",
+      "PackagePath": "staticwebassets\\images\\shape-03.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-04.svg",
+      "PackagePath": "staticwebassets\\images\\shape-04.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-05.svg",
+      "PackagePath": "staticwebassets\\images\\shape-05.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-06.svg",
+      "PackagePath": "staticwebassets\\images\\shape-06.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-07.svg",
+      "PackagePath": "staticwebassets\\images\\shape-07.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-08.svg",
+      "PackagePath": "staticwebassets\\images\\shape-08.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-09.svg",
+      "PackagePath": "staticwebassets\\images\\shape-09.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-10.svg",
+      "PackagePath": "staticwebassets\\images\\shape-10.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-11.svg",
+      "PackagePath": "staticwebassets\\images\\shape-11.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-12.svg",
+      "PackagePath": "staticwebassets\\images\\shape-12.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-13.svg",
+      "PackagePath": "staticwebassets\\images\\shape-13.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-14.svg",
+      "PackagePath": "staticwebassets\\images\\shape-14.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-15.svg",
+      "PackagePath": "staticwebassets\\images\\shape-15.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-16.svg",
+      "PackagePath": "staticwebassets\\images\\shape-16.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-17.svg",
+      "PackagePath": "staticwebassets\\images\\shape-17.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\shape-18.svg",
+      "PackagePath": "staticwebassets\\images\\shape-18.svg"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\team-01.png",
+      "PackagePath": "staticwebassets\\images\\team-01.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\team-02.png",
+      "PackagePath": "staticwebassets\\images\\team-02.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\team-03.png",
+      "PackagePath": "staticwebassets\\images\\team-03.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\testimonial.png",
+      "PackagePath": "staticwebassets\\images\\testimonial.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\valores.png",
+      "PackagePath": "staticwebassets\\images\\valores.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\images\\vision.png",
+      "PackagePath": "staticwebassets\\images\\vision.png"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.gruvi.props",
+      "PackagePath": "build\\gruvi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.gruvi.props",
+      "PackagePath": "buildMultiTargeting\\gruvi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.gruvi.props",
+      "PackagePath": "buildTransitive\\gruvi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.gruvi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,63 @@
+﻿@page
+@model gruvi.Pages.Registro
+@{
+    ViewData["Title"] = "Crear Cuenta";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Gruvi</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a asp-page="/Index" class="logo"> <img src="~/images/logotipo.png" alt="Gruvi Logo"> </a>
+            <div class="buttons">
+                <a asp-page="/Login" class="btn btn-outline">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="register-container">
+            <h2>Crear una cuenta</h2>
+            @if (Request.Query["error"].Count > 0)
+            {
+                <p class="error">@Request.Query["error"]</p>
+            }
+            @if (Request.Query["success"].Count > 0)
+            {
+                <p class="success">@Request.Query["success"]</p>
+            }
+            <form method="post" action="/Registro">
+                <div class="input-group">
+                    <label asp-for="Input.Nombre">Nombre Completo</label>
+                    <input asp-for="Input.Nombre" class="input" required>
+                </div>
+                <div class="input-group">
+                    <label asp-for="Input.Email">Correo Electrónico</label>
+                    <input asp-for="Input.Email" type="email" class="input" required>
+                </div>
+                <div class="input-group">
+                    <label asp-for="Input.Password">Contraseña</label>
+                    <input asp-for="Input.Password" type="password" class="input" required>
+                </div>
+                <div class="input-group">
+                    <label asp-for="Input.ConfirmarPassword">Confirmar Contraseña</label>
+                    <input asp-for="Input.ConfirmarPassword" type="password" class="input" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+            <p>¿Ya tienes una cuenta? <a asp-page="/login">Inicia sesión aquí</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gruvi. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

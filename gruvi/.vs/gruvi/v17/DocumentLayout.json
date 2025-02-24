@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arell\\source\\repos\\gruvi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\models\\restablecer_pwr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\models\\restablecer_pwr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\registro.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\registro.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\gruvi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\gruvi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\cambiar_contrase\u00F1a.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\cambiar_contrase\u00F1a.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\restablecer_contrase\u00F1a.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\restablecer_contrase\u00F1a.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\shared\\_valores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\shared\\_valores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\shared\\_vision.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\shared\\_vision.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\shared\\_mision.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\shared\\_mision.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\contacto.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\contacto.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|c:\\users\\arell\\source\\repos\\gruvi\\gruvi\\pages\\nosotros.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3007131F-C374-44A2-BF44-03FF4C96B249}|gruvi\\gruvi.csproj|solutionrelative:gruvi\\pages\\nosotros.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "gruvi\\wwwroot\\js\\script.js",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "gruvi\\wwwroot\\js\\script.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-19T22:38:16.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Registro.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Registro.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Registro.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\Registro.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-19T21:01:37.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "gruvi\\Models\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Models\\Usuarios.cs",
+              "RelativeToolTip": "gruvi\\Models\\Usuarios.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:13:57.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\login.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\login.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\login.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\login.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAewCkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-19T19:22:47.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Registro.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Registro.cshtml.cs",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Registro.cshtml.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Registro.cshtml.cs",
+              "RelativeToolTip": "gruvi\\Pages\\Registro.cshtml.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAuwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:25:18.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Program.cs",
+              "RelativeDocumentMoniker": "gruvi\\Program.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Program.cs",
+              "RelativeToolTip": "gruvi\\Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T18:10:58.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "gruvi.csproj",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\gruvi.csproj",
+              "RelativeDocumentMoniker": "gruvi\\gruvi.csproj",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\gruvi.csproj",
+              "RelativeToolTip": "gruvi\\gruvi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T02:07:57.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAewD4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T18:09:53.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\appsettings.json",
+              "RelativeDocumentMoniker": "gruvi\\appsettings.json",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\appsettings.json",
+              "RelativeToolTip": "gruvi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T20:03:15.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "restablecer_pwr.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Models\\restablecer_pwr.cs",
+              "RelativeDocumentMoniker": "gruvi\\Models\\restablecer_pwr.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Models\\restablecer_pwr.cs",
+              "RelativeToolTip": "gruvi\\Models\\restablecer_pwr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:12:57.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "restablecer_contrase\u00F1a.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\restablecer_contrase\u00F1a.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\restablecer_contrase\u00F1a.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\restablecer_contrase\u00F1a.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\restablecer_contrase\u00F1a.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T02:26:15.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\login.cshtml.cs",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\login.cshtml.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\login.cshtml.cs",
+              "RelativeToolTip": "gruvi\\Pages\\login.cshtml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:21:39.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "gruvi\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "gruvi\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwGcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-14T18:51:56.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "cambiar_contrase\u00F1a.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\cambiar_contrase\u00F1a.cshtml.cs",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\cambiar_contrase\u00F1a.cshtml.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\cambiar_contrase\u00F1a.cshtml.cs",
+              "RelativeToolTip": "gruvi\\Pages\\cambiar_contrase\u00F1a.cshtml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAowBIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:17:22.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Nosotros.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Nosotros.cshtml.cs",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Nosotros.cshtml.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Nosotros.cshtml.cs",
+              "RelativeToolTip": "gruvi\\Pages\\Nosotros.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T21:10:40.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Mision.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Mision.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Shared\\_Mision.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Mision.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\Shared\\_Mision.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T21:27:47.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Valores.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Valores.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Shared\\_Valores.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Valores.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\Shared\\_Valores.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T21:27:00.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Vision.cshtml",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Vision.cshtml",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Shared\\_Vision.cshtml",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Shared\\_Vision.cshtml",
+              "RelativeToolTip": "gruvi\\Pages\\Shared\\_Vision.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T21:27:26.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Contacto.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Contacto.cshtml.cs",
+              "RelativeDocumentMoniker": "gruvi\\Pages\\Contacto.cshtml.cs",
+              "ToolTip": "C:\\Users\\arell\\source\\repos\\gruvi\\gruvi\\Pages\\Contacto.cshtml.cs",
+              "RelativeToolTip": "gruvi\\Pages\\Contacto.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T21:52:50.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
