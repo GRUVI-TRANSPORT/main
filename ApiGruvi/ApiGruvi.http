@@ -1,0 +1,6 @@
+@ApiGruvi_HostAddress = http://localhost:5074
+
+GET {{ApiGruvi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sugg9\\Jobs\\main\\gruvi\\gruvi\\gruvi.csproj": {}
+    "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sugg9\\Jobs\\main\\gruvi\\gruvi\\gruvi.csproj": {
+    "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sugg9\\Jobs\\main\\gruvi\\gruvi\\gruvi.csproj",
-        "projectName": "gruvi",
-        "projectPath": "C:\\Users\\sugg9\\Jobs\\main\\gruvi\\gruvi\\gruvi.csproj",
+        "projectUniqueName": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
+        "projectName": "ApiGruvi",
+        "projectPath": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
         "packagesPath": "C:\\Users\\sugg9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sugg9\\Jobs\\main\\gruvi\\gruvi\\obj\\",
+        "outputPath": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,10 +55,6 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[8.0.13, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -66,6 +62,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
