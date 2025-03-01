@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gruvi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3a96e6fb87336e864a9c38f0c843173c7ef93f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f0a3d50786df2f47954e091d10d833d660ee610")]
 [assembly: System.Reflection.AssemblyProductAttribute("gruvi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gruvi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
