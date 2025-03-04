@@ -11,20 +11,15 @@ namespace ApiGruvi.Models
 
         [Required]
         [ForeignKey("Usuario")]
-        [Column("usuario_id")] 
+        [Column("usuario_id")]
         public int UsuarioId { get; set; }
 
         [Required]
         [ForeignKey("Viaje")]
-        [Column("viaje_id")] 
-        public int ViajeId { get; set; }
+        [Column("viaje_id")]
+        public int Viaje_Id { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        [Column("lugar_abordaje")]
-        public string LugarAbordaje { get; set; }
-
-        public DateTime FechaCompra { get; set; }
+        public DateTime Fecha_Compra { get; set; }
 
         // Relación con Usuario
         public Usuarios Usuario { get; set; }
@@ -34,7 +29,7 @@ namespace ApiGruvi.Models
 
         public Boleto()
         {
-            FechaCompra = DateTime.Now;
+            Fecha_Compra = DateTime.Now;
         }
     }
 }

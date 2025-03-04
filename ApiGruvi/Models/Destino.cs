@@ -14,12 +14,5 @@ public class Destino
     [MaxLength(500)]
     public string? Descripcion { get; set; }
 
-    [MaxLength(500)]
-    public string? LugaresTuristicos { get; set; }
-
-    [MaxLength(100)]
-    public string? Clima { get; set; }
-
-    [MaxLength(100)]
-    public string? Cultura { get; set; }
+   
 }

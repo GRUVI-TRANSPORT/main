@@ -1,50 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\",
+  "WorkspaceRootPath": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\models\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\apigruvi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:apigruvi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\apigruvi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:apigruvi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\opinionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\opinionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\opinion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\opinion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\sugg9\\source\\repos\\apigruvi\\apigruvi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:apigruvi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,178 +53,151 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 343,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            }
-          ]
-        },
-        {
           "DockedHeight": 163,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApiGruvi",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
-              "RelativeDocumentMoniker": "ApiGruvi.csproj",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
-              "RelativeToolTip": "ApiGruvi.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-24T17:03:25.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFEAAAAjAAAA",
+              "DocumentIndex": 3,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Usuarios.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwB0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:41:11.839Z",
+              "WhenOpened": "2025-03-04T01:37:49.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Models\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Usuarios.cs",
-              "RelativeToolTip": "Models\\Usuarios.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwB0AAAABAAAA",
+              "Title": "Destino.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Destino.cs",
+              "RelativeDocumentMoniker": "Models\\Destino.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Destino.cs",
+              "RelativeToolTip": "Models\\Destino.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:41:29.865Z",
+              "WhenOpened": "2025-03-04T01:33:19.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAIwAUAAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "Viaje.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Viaje.cs",
+              "RelativeDocumentMoniker": "Models\\Viaje.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Viaje.cs",
+              "RelativeToolTip": "Models\\Viaje.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA1wB8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:26:13.805Z",
+              "WhenOpened": "2025-03-03T06:59:43.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAwEgAAAAAAAAA",
+              "Title": "Boleto.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Boleto.cs",
+              "RelativeDocumentMoniker": "Models\\Boleto.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Boleto.cs",
+              "RelativeToolTip": "Models\\Boleto.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAswBEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T15:39:47.35Z",
+              "WhenOpened": "2025-03-03T07:32:59.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "Controllers\\PagoController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwBoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:14:34.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Pago.cs",
+              "RelativeDocumentMoniker": "Models\\Pago.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Pago.cs",
+              "RelativeToolTip": "Models\\Pago.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:13:41.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ViajeController.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\ViajeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ViajeController.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\ViajeController.cs",
+              "RelativeToolTip": "Controllers\\ViajeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAUwCMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:48:46.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Opinion.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Opinion.cs",
+              "RelativeDocumentMoniker": "Models\\Opinion.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Opinion.cs",
+              "RelativeToolTip": "Models\\Opinion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:41:08.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OpinionesController.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\OpinionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OpinionesController.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\OpinionesController.cs",
+              "RelativeToolTip": "Controllers\\OpinionesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:40:05.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T16:36:40.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Destino.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Destino.cs",
-              "RelativeDocumentMoniker": "Models\\Destino.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Destino.cs",
-              "RelativeToolTip": "Models\\Destino.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:39:35.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Viaje.cs",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Viaje.cs",
-              "RelativeDocumentMoniker": "Models\\Viaje.cs",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\Models\\Viaje.cs",
-              "RelativeToolTip": "Models\\Viaje.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:42:25.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApiGruvi.http",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.http",
-              "RelativeDocumentMoniker": "ApiGruvi.http",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.http",
-              "RelativeToolTip": "ApiGruvi.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-24T16:36:43.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ApiGruvi",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
-              "RelativeDocumentMoniker": "ApiGruvi.csproj",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\ApiGruvi.csproj",
-              "RelativeToolTip": "ApiGruvi.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-24T17:02:47.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\sugg9\\source\\repos\\ApiGruvi\\appsettings.json",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-24T15:39:23.793Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 61,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

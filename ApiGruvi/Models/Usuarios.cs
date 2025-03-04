@@ -20,11 +20,11 @@ namespace ApiGruvi.Models
         [StringLength(255)]
         public string? Password { get; set; }
 
-        public DateTime fecha_registro { get; set; }
+        public DateTime fecharegistro { get; set; }
 
         public Usuarios()
         {
-            fecha_registro = DateTime.Now;
+            fecharegistro = DateTime.Now;
         }
     }
 }

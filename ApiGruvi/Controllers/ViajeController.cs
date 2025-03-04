@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using System;
+using System.Collections.Generic;
 
 namespace ApiGruvi.Controllers
 {
@@ -19,7 +20,7 @@ namespace ApiGruvi.Controllers
             _context = context;
         }
 
-        // destinos disponibles
+        // Obtener destinos disponibles
         [HttpGet("destinos")]
         public async Task<IActionResult> GetDestinos()
         {
@@ -27,7 +28,7 @@ namespace ApiGruvi.Controllers
             return Ok(destinos);
         }
 
-        // Viajes disponibles por lugar de salida y destino
+        // Obtener viajes disponibles por lugar de salida y destino
         [HttpGet("viajes/{origenId}")]
         public async Task<IActionResult> GetViajes(int origenId)
         {
@@ -38,97 +39,91 @@ namespace ApiGruvi.Controllers
             }
 
             var viajes = await _context.Viajes
-                .Where(v => v.DestinoId != origenId)
-                .Include(v => v.Destino) 
+                .Where(v => v.Destino_Id != origenId)
+                .Include(v => v.Destino_Navigation)
                 .Select(v => new
                 {
                     v.Id,
-                    v.FechaSalida,
+                    v.Fecha_Salida,
                     v.Precio,
-                    v.AsientosDisponibles 
+                    v.Asientos_Disponibles
                 })
                 .ToListAsync();
 
             return Ok(viajes);
         }
 
-        // Comprar boleto
-        [HttpPost("comprar")]
-        public async Task<IActionResult> ComprarBoleto([FromBody] ComprarBoletoRequest request)
+        [HttpPost("DetalleCompra")]
+        public async Task<IActionResult> DetalleCompra([FromBody] DetalleCompraRequest request)
         {
-            // Verificar que el viaje existe
+            // Obtener los datos del viaje
             var viaje = await _context.Viajes
-                .Include(v => v.Destino)
+                .Include(v => v.Destino_Navigation)  // Incluir destino para obtener la información completa
                 .FirstOrDefaultAsync(v => v.Id == request.ViajeId);
+
             if (viaje == null)
             {
                 return BadRequest(new { message = "Viaje no encontrado." });
             }
 
-            // Verificar que hay asientos disponibles
-            if (viaje.AsientosDisponibles <= 0)
+            // Obtener el usuario que está comprando el boleto
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Id == request.UsuarioId);
+
+            if (usuario == null)
             {
-                return BadRequest(new { message = "No hay asientos disponibles." });
+                return BadRequest(new { message = "Usuario no encontrado." });
             }
 
-            using (var transaction = await _context.Database.BeginTransactionAsync())
+            // Verificar que el viaje tiene suficientes asientos disponibles
+            if (viaje.Asientos_Disponibles < request.Cantidad)
             {
-                try
-                {
-                    // Verifica los asientos
-                    var updatedViaje = await _context.Viajes
-                        .Where(v => v.Id == request.ViajeId && v.AsientosDisponibles > 0) 
-                        .FirstOrDefaultAsync();
-
-                    if (updatedViaje == null)
-                    {
-                        return BadRequest(new { message = "No hay asientos disponibles en este viaje." });
-                    }
-
-                    // Crear el boleto
-                    var boleto = new Boleto
-                    {
-                        UsuarioId = request.UsuarioId,
-                        ViajeId = request.ViajeId,
-                        LugarAbordaje = request.LugarAbordaje,
-                        FechaCompra = DateTime.Now
-                    };
-
-                    _context.Boletos.Add(boleto);
-
-                    
-                    updatedViaje.AsientosDisponibles--;
-
-                   
-                    await _context.SaveChangesAsync();
-                    await transaction.CommitAsync();
-
-                    return Ok(new
-                    {
-                        message = "Boleto comprado con éxito.",
-                        boleto = new
-                        {
-                            boleto.Id,
-                            boleto.UsuarioId,
-                            boleto.ViajeId,
-                            boleto.LugarAbordaje,
-                            boleto.FechaCompra
-                        }
-                    });
-                }
-                catch (Exception ex)
-                {
-                    await transaction.RollbackAsync();
-                    return StatusCode(500, new { message = "Hubo un error al procesar la compra del boleto.", error = ex.Message });
-                }
+                return BadRequest(new { message = "No hay suficientes asientos disponibles." });
             }
+
+            // Obtener el precio de cada boleto
+            decimal precioBoleto = viaje.Precio;
+
+            // Calcular el total basado en la cantidad de boletos
+            decimal totalCompra = precioBoleto * request.Cantidad;
+
+            // Crear una respuesta con los detalles antes de realizar la compra
+            var detallesCompra = new
+            {
+                Usuario = new
+                {
+                    usuario.Nombre,
+                    usuario.Email
+                },
+                Viaje = new
+                {
+                    ViajeId = viaje.Id,
+                    Destino = viaje.Destino_Navigation.Nombre,
+                    FechaSalida = viaje.Fecha_Salida,
+                    FechaLlegada = viaje.Fecha_Llegada,
+                    PrecioBoleto = precioBoleto,
+                    CantidadBoletos = request.Cantidad
+                },
+                TotalCompra = totalCompra
+            };
+
+            // Devolver los detalles de la compra
+            return Ok(new
+            {
+                message = "Detalles de la compra.",
+                detalles = detallesCompra
+            });
         }
 
-        public class ComprarBoletoRequest
+
+
+        // Modelo de solicitud para obtener los detalles de la compra
+        public class DetalleCompraRequest
         {
             public int UsuarioId { get; set; }
             public int ViajeId { get; set; }
-            public string LugarAbordaje { get; set; } = string.Empty;
+            public int Cantidad { get; set; } // Número de boletos
         }
+
     }
 }
