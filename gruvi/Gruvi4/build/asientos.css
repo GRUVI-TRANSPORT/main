@@ -1,0 +1,33 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#mapaAsientos {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.asiento {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background: lightgray;
+    cursor: pointer;
+}
+
+.asiento.seleccionado {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
