@@ -83,6 +83,9 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+
+
+
 // Rutas para los controladores de la API
 app.MapControllers();
 

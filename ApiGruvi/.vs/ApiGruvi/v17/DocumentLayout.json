@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\recuperarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\recuperarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +43,8 @@
       "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\controllers\\opinionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:controllers\\opinionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\models\\opinion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|solutionrelative:models\\opinion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA4C855A-0965-4173-83B2-E5DCD8D8C8EE}|ApiGruvi.csproj|c:\\users\\arell\\testgit\\main\\apigruvi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -54,8 +58,44 @@
       "DocumentGroups": [
         {
           "DockedHeight": 163,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAASwCkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:08:11.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecuperarController.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\RecuperarController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecuperarController.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\RecuperarController.cs",
+              "RelativeToolTip": "Controllers\\RecuperarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:25:21.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PerfilController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PerfilController.cs",
+              "RelativeToolTip": "Controllers\\PerfilController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAtwBgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:24:10.807Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -64,14 +104,13 @@
               "RelativeDocumentMoniker": "Models\\Usuarios.cs",
               "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Usuarios.cs",
               "RelativeToolTip": "Models\\Usuarios.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAUwB0AAAABAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T01:37:49.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T01:37:49.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Destino.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Destino.cs",
               "RelativeDocumentMoniker": "Models\\Destino.cs",
@@ -79,12 +118,11 @@
               "RelativeToolTip": "Models\\Destino.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwBAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T01:33:19.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T01:33:19.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Viaje.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Viaje.cs",
               "RelativeDocumentMoniker": "Models\\Viaje.cs",
@@ -92,90 +130,60 @@
               "RelativeToolTip": "Models\\Viaje.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAA1wB8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T06:59:43.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T06:59:43.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Boleto.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Boleto.cs",
               "RelativeDocumentMoniker": "Models\\Boleto.cs",
               "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Boleto.cs",
               "RelativeToolTip": "Models\\Boleto.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAswBEAAAAdAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwBEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T07:32:59.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T07:32:59.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "PagoController.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PagoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
               "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\PagoController.cs",
               "RelativeToolTip": "Controllers\\PagoController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwBoAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T07:14:34.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Pago.cs",
               "RelativeDocumentMoniker": "Models\\Pago.cs",
               "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Pago.cs",
               "RelativeToolTip": "Models\\Pago.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAkwB8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T07:13:41.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T07:13:41.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ViajeController.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\ViajeController.cs",
               "RelativeDocumentMoniker": "Controllers\\ViajeController.cs",
               "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\ViajeController.cs",
               "RelativeToolTip": "Controllers\\ViajeController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwCMAAAAfAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAMwGIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T06:48:46.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T06:48:46.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Opinion.cs",
-              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Opinion.cs",
-              "RelativeDocumentMoniker": "Models\\Opinion.cs",
-              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Models\\Opinion.cs",
-              "RelativeToolTip": "Models\\Opinion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T06:41:08.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OpinionesController.cs",
-              "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\OpinionesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OpinionesController.cs",
-              "ToolTip": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Controllers\\OpinionesController.cs",
-              "RelativeToolTip": "Controllers\\OpinionesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T06:40:05.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -183,12 +191,11 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:36:40.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T16:36:40.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\arell\\testgit\\main\\ApiGruvi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -196,8 +203,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-24T15:39:23.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T15:39:23.793Z"
             }
           ]
         }

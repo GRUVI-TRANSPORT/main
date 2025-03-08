@@ -22,10 +22,10 @@ namespace ApiGruvi.Models
         public DateTime fecha_pago { get; set; }
 
         [Required]
-        public string Metodo { get; set; } = string.Empty; // Ejemplo: "Tarjeta", "Paypal", etc.
+        [StringLength(16, MinimumLength = 16, ErrorMessage = "El número de tarjeta debe tener exactamente 16 dígitos.")]
+        [RegularExpression("^[0-9]{16}$", ErrorMessage = "El número de tarjeta solo puede contener números.")]
+        public string Numero_Tarjeta { get; set; } = string.Empty;
 
-        public string Estado { get; set; } = "Completado"; // Puede ser "Completado", "Fallido", etc.
+        public string Estado { get; set; } = "Completado";
     }
 }
-
-

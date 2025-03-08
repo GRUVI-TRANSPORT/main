@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiGruvi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b66dec763f87822d4d323dc59fe66e26d85ea942")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa4a1cd256bf4211e7eaf4f6a7d46b2b10cf4f3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiGruvi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiGruvi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

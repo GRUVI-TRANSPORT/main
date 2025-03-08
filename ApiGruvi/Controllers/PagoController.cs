@@ -3,6 +3,8 @@ using ApiGruvi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ApiGruvi.Controllers
@@ -29,17 +31,40 @@ namespace ApiGruvi.Controllers
                 return BadRequest(new { message = "Boleto no encontrado." });
             }
 
-            // ✅ Obtener el viaje asociado al boleto
+            // Obtener el viaje asociado al boleto
             var viaje = await _context.Viajes.FirstOrDefaultAsync(v => v.Id == boleto.Viaje_Id);
             if (viaje == null)
             {
                 return BadRequest(new { message = "Viaje asociado al boleto no encontrado." });
             }
 
-            // ✅ Verificar si el monto coincide con el precio del viaje
+            // Verificar si el monto coincide con el precio del viaje
             if (request.Monto != viaje.Precio)
             {
                 return BadRequest(new { message = "El monto no coincide con el precio del viaje. Pago rechazado." });
+            }
+
+            // ✅ Validar los 16 dígitos de la tarjeta
+            if (string.IsNullOrWhiteSpace(request.Numero_Tarjeta) || request.Numero_Tarjeta.Length != 16 || !request.Numero_Tarjeta.All(char.IsDigit))
+            {
+                return BadRequest(new { message = "El número de tarjeta debe tener exactamente 16 dígitos numéricos." });
+            }
+
+            // ✅ Validar los 3 dígitos del CVV
+            if (string.IsNullOrWhiteSpace(request.Cvv) || request.Cvv.Length != 3 || !request.Cvv.All(char.IsDigit))
+            {
+                return BadRequest(new { message = "El CVV debe tener exactamente 3 dígitos numéricos." });
+            }
+
+            // ✅ Validar fecha de expiración (mes/año)
+            if (!DateTime.TryParseExact(request.FechaExpiracion, "MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime fechaExpiracion))
+            {
+                return BadRequest(new { message = "El formato de la fecha de expiración es incorrecto. Usa MM/yyyy." });
+            }
+
+            if (fechaExpiracion < DateTime.Now)
+            {
+                return BadRequest(new { message = "La tarjeta está expirada. Verifica la fecha de expiración." });
             }
 
             var pago = new Pago
@@ -48,7 +73,6 @@ namespace ApiGruvi.Controllers
                 Boleto_Id = request.Boleto_Id,
                 Monto = request.Monto,
                 fecha_pago = DateTime.Now,
-                Metodo = request.Metodo,
                 Estado = "Completado"
             };
 
@@ -67,7 +91,9 @@ namespace ApiGruvi.Controllers
             public int Usuario_Id { get; set; }
             public int Boleto_Id { get; set; }
             public decimal Monto { get; set; }
-            public string Metodo { get; set; } = string.Empty;
+            public string Numero_Tarjeta { get; set; } = string.Empty; // 16 dígitos
+            public string Cvv { get; set; } = string.Empty; // 3 dígitos
+            public string FechaExpiracion { get; set; } = string.Empty; // Formato "MM/yyyy"
         }
     }
 }
