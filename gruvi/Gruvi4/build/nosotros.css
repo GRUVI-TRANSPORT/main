@@ -41,7 +41,7 @@
 }
   p {
     font-size: 20px;         /* Tamaño del párrafo */
-    color: #3d3838;          /* Color verde para el párrafo */
+    color: rgb(121, 128, 138, 1);          /* Color verde para el párrafo */
     margin-bottom: 20px; /* Ajusta el valor según lo que necesites */
   }
 
@@ -49,5 +49,5 @@
     font-family: inherit; /* Usa la misma fuente que el resto del texto */
     font-size: 20px; /* Ajusta al tamaño deseado */
     line-height: 1.5; /* Mejora la legibilidad */
-    color: #3d3838; /* Ajusta el color aquí */
+    color: rgb(121, 128, 138, 1);  /* Ajusta el color aquí */
 }

@@ -1,18 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | Gruvi</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+    
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  
   <body
     x-data="{ page: 'signin', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'b eh': darkMode === true}"
+    class="contacto"
   >
+
         <!-- ===== Header Start ===== -->
         <header
         class="g s r vd ya cj"
@@ -164,13 +171,23 @@
 
     }
   </style>
-<a href="https://api.whatsapp.com/send?phone=528125032418&text=Me%20interesa%20mas" target="_blank" class="float">
-  <i class="fa-brands fa-whatsapp"></i>
-  <header class="header">
-      <img clas="header__logo" src="images/icons-whatsapp.svg" />
+<a href="https://api.whatsapp.com/send?phone=528125032418&text=Me%20interesa%20mas" 
+target="_blank" 
+class="whatsapp-flotante">
+<img src="images/icons-whatsapp.svg" alt="WhatsApp">
+</a>
 
 <!-- ===== Blog End ===== -->
-
+<!-- ===== Pricing Table Start ===== -->
+<section x-data="setup()" class="i pg fh rm ji gp uq">
+  <!-- Bg Shapes -->
+  <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+  <img src="images/shape-12.svg" alt="Shape" class="h p s" />
+  <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
+  <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
+  <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
+  <img src="images/shape-12.svg" alt="Shape" class="h p s" />
+  <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 <!-- ===== Footer Start ===== -->
 <footer>
   <div class="bb ze ki xn 2xl:ud-px-0">
