@@ -1,0 +1,47 @@
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Cambiamos de right a left */
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* Color de WhatsApp */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(111, 217, 225);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-flotante img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-flotante::after {
+    content: "¡Envíanos un mensaje por WhatsApp!";
+    position: absolute;
+    top: 50%; /* Mueve el mensaje arriba del ícono */
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #05a678;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: block; /* Inicialmente está oculto */
+    opacity: 0;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+    white-space: nowrap;
+}
+
+.whatsapp-flotante:hover::after {
+    display: block;
+    opacity: 1;
+}
+

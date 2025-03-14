@@ -1,0 +1,56 @@
+:root {
+    --color-background: #ffffff; /* Fondo del header */
+    --color-primary: #333;   /* Color principal (azul) */
+    --color-text: #414040;      /* Color del texto */
+}
+
+header {
+    font-family: Arial, sans-serif !important;
+    background-color: rgba(189, 189, 189, 0.5) !important; /* Blanco con 50% de transparencia */
+    backdrop-filter: blur(5px); /* Difuminar el fondo */ padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333; /* Color de la letra del header */
+}
+
+header a {
+    color: #333; /* Color de los enlaces */
+    font-family: Arial, sans-serif !important;
+    font-size: 17px !important;
+    text-decoration: none;       /* Quitar subrayado */
+    margin: 0 10px;
+}
+
+header a:hover {
+    color: #99F2E2  ; /* Color al pasar el mouse */
+}
+
+/* Botones del header */
+header button {
+    background-color: #333333 !important; /* Fondo del botón */
+    color: white;                          /* Color del texto del botón */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #99F2E2  !important; /* Fondo al pasar el mouse */
+}
+
+a.ek.pk.xl, a.lk.gh.dk.rg {
+    color: white !important; /* Texto en blanco */
+    background-color: rgba(177, 176, 176, 0.5) !important; /* Fondo oscuro */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+a.ek.pk.xl:hover, a.lk.gh.dk.rg:hover {
+    background-color: rgba(2, 245, 164, 0.5) !important; /* Color más oscuro al hacer hover */
+}
