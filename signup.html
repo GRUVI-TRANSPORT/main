@@ -51,7 +51,7 @@
         <ul class="tc _o sf yo cg ep">
           <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
           <li><a href="boletos.html" class="xl">Boletos</a></li>
-          <li><a href="reserva.html" class="xl">Reservas</a></li>
+          <li><a href="reservas.html" class="xl">Reservas</a></li>
           <li><a href="nosotros.html" class="xl">Nosotros</a></li>
           <li><a href="contacto.html" class="xl">Contacto</a></li>
         </ul>
@@ -247,20 +247,99 @@
     </main>
     <!-- ===== Footer Start ===== -->
     <footer class="GRUVi-footer">
+      <link rel="stylesheet" href="footer.css">
       <div class="bb ze ki xn">
         <!-- Footer inferior -->
         <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
           <div class="animate_top">
             <ul class="tc wf gg">
-              <li><a href="#" class="xl footer-link">Aviso de privacidad</a></li>
+              <ul class="tc wf gg">
+                <li><a href="#" class="xl footer-link" id="openModal">Aviso de privacidad</a></li>
             </ul>
           </div>
+          <!-- Redes sociales -->
+      <div class="animate_top">
+        <a href="https://www.facebook.com/profile.php?id=61574228304083" class="footer-social">
+          <img src="images/icons8-facebook.svg" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/gruvi5?utm_source=qr" class="footer-social">
+          <img src="images/icons8-instagram.svg" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
     
           <div class="animate_top">
             <p>&copy; 2025 GRUVi. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
+      <div id="privacyModal" class="modal">
+        <div class="modal-content" style="max-width: 600px; max-height: 70vh; overflow-y: auto; padding: 20px; border-radius: 10px; text-align: justify; line-height: 1.6; background: #fff;">
+          <span class="close" id="closeModal" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+          <h2 style="text-align: center; margin-bottom: 15px;">Aviso de Privacidad</h2>
+          
+          <div class="modal-body">
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al acceder y utilizar el sitio web de <strong>GRUVi</strong> (en adelante, "el Sitio"), usted acepta cumplir con los siguientes Términos y Condiciones Generales...</p>
+      
+            <h3>2. Descripción del Servicio</h3>
+            <p>GRUVi es una plataforma en línea que proporciona información y servicios relacionados con el transporte urbano...</p>
+      
+            <h3>3. Uso del Sitio</h3>
+            <ul>
+              <li>Usted se compromete a utilizar el Sitio de manera responsable.</li>
+              <li>Queda prohibido el uso del Sitio para fines ilegales, fraudulentos o que puedan dañar su funcionalidad.</li>
+              <li>GRUVi se reserva el derecho de suspender el acceso a quienes incumplan estos términos.</li>
+            </ul>
+      
+            <h3>4. Registro y Cuentas de Usuario</h3>
+            <p>Algunas funcionalidades requieren la creación de una cuenta. Usted es responsable de mantener la confidencialidad de sus credenciales.</p>
+      
+            <h3>5. Propiedad Intelectual</h3>
+            <p>Todo el contenido del Sitio es propiedad de GRUVi y está protegido por leyes de propiedad intelectual.</p>
+      
+            <h3>6. Limitación de Responsabilidad</h3>
+            <p>El uso del Sitio es bajo su propio riesgo. GRUVi no será responsable por daños directos o indirectos derivados del uso del Sitio.</p>
+      
+            <h3>7. Enlaces a Terceros</h3>
+            <p>El Sitio puede contener enlaces a terceros. GRUVi no es responsable de su contenido ni de sus prácticas de privacidad.</p>
+      
+            <h3>8. Modificaciones</h3>
+            <p>GRUVi puede modificar estos términos en cualquier momento. Se recomienda revisarlos periódicamente.</p>
+      
+            <h3>9. Privacidad y Protección de Datos</h3>
+            <p>El uso del Sitio está sujeto a nuestra Política de Privacidad.</p>
+      
+            <h3>10. Ley Aplicable y Jurisdicción</h3>
+            <p>Estos términos se rigen por las leyes del país donde opera GRUVi.</p>
+      
+            <h3>11. Resolución de Conflictos</h3>
+            <p>GRUVi intentará resolver disputas de manera amistosa. Si no se logra, se acudirá a tribunales competentes.</p>
+      
+            <h3>12. Contacto</h3>
+            <p>Para consultas, visite la página de contacto en nuestro sitio web.</p>
+      
+            <p class="modal-date">📅 Fecha de entrada en vigor: <strong>13/03/2025</strong></p>
+          </div>
+        </div>
+      </div> 
+      
+      <script>
+      document.getElementById("openModal").addEventListener("click", function(event) {
+          event.preventDefault();
+          document.getElementById("privacyModal").style.display = "block";
+      });
+      
+      document.getElementById("closeModal").addEventListener("click", function() {
+          document.getElementById("privacyModal").style.display = "none";
+      });
+      
+      window.onclick = function(event) {
+          let modal = document.getElementById("privacyModal");
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      };
+      </script>
     </footer>
     <!-- ===== Footer End ===== -->
 

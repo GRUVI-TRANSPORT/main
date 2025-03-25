@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas | Gruvi</title>
+  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+  <body
+    x-data="{ page: 'signin', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'b eh': darkMode === true}"
+  >
+        <!-- ===== Header Start ===== -->
+        <header
+        class="g s r vd ya cj"
+        :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
+        @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
+      >
+        <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+          <div class="vd to/4 tc wf yf">
+            <a href="index.html">
+              <img class="om" src="images/logotipo.png" alt="Logo Light" id="imagen-única"/>
+              <img class="xc nm" src="images/logotipo.png" alt="Logo Dark" id="imagen-única">
+            </a>
+            <script src="auth.js" defer></script>
+            <!-- Hamburger Toggle BTN -->
+            <button class="po rc" @click="navigationOpen = !navigationOpen">
+              <span class="rc i pf re pd">
+                <span class="du-block h q vd yc">
+                  <span class="rc i r s eh um tg te rd eb ml jl dl" :class="{ 'ue el': !navigationOpen }"></span>
+                  <span class="rc i r s eh um tg te rd eb ml jl fl" :class="{ 'ue qr': !navigationOpen }"></span>
+                  <span class="rc i r s eh um tg te rd eb ml jl gl" :class="{ 'ue hl': !navigationOpen }"></span>
+                </span>
+                <span class="du-block h q vd yc lf">
+                  <span class="rc eh um tg ml jl el h na r ve yc" :class="{ 'sd dl': !navigationOpen }"></span>
+                  <span class="rc eh um tg ml jl qr h s pa vd rd" :class="{ 'sd rr': !navigationOpen }"></span>
+                </span>
+              </span>
+            </button>
+            <!-- Hamburger Toggle BTN -->
+          </div>
+      
+          <div
+            class="vd wo/4 sd qo f ho oo wf yf"
+            :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
+          >
+            <nav>
+              <ul class="tc _o sf yo cg ep">
+                <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
+                <li><a href="boletos.html" class="xl">Boletos</a></li>
+                <li><a href="reserva.html" class="xl">Reservas</a></li>
+                <li><a href="nosotros.html" class="xl">Nosotros</a></li>
+                <li><a href="contacto.html" class="xl">Contacto</a></li>
+              </ul>
+            </nav>
+      
+            <div class="tc wf ig pb no">
+              <div class="pc h io pa ra" :class="navigationOpen ? '!-ud-visible' : 'd'">
+                <label class="rc ab i">
+                  <input type="checkbox" :value="darkMode" @change="darkMode = !darkMode" class="pf vd yc uk h r za ab" />
+                  <!-- Icon Sun -->
+                  <svg :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }" class="th om" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0908 18.6363C10.3549 18.6363 8.69 17.9467 7.46249 16.7192C6.23497 15.4916 5.54537 13.8268 5.54537 12.0908C5.54537 10.3549 6.23497 8.69 7.46249 7.46249C8.69 6.23497 10.3549 5.54537 12.0908 5.54537C13.8268 5.54537 15.4916 6.23497 16.7192 7.46249C17.9467 8.69 18.6363 10.3549 18.6363 12.0908C18.6363 13.8268 17.9467 15.4916 16.7192 16.7192C15.4916 17.9467 13.8268 18.6363 12.0908 18.6363ZM12.0908 16.4545C13.2481 16.4545 14.358 15.9947 15.1764 15.1764C15.9947 14.358 16.4545 13.2481 16.4545 12.0908C16.4545 10.9335 15.9947 9.8236 15.1764 9.00526C14.358 8.18692 13.2481 7.72718 12.0908 7.72718C10.9335 7.72718 9.8236 8.18692 9.00526 9.00526C8.18692 9.8236 7.72718 10.9335 7.72718 12.0908C7.72718 13.2481 8.18692 14.358 9.00526 15.1764C9.8236 15.9947 10.9335 16.4545 12.0908 16.4545ZM10.9999 0.0908203H13.1817V3.36355H10.9999V0.0908203ZM10.9999 20.8181H13.1817V24.0908H10.9999V20.8181ZM2.83446 4.377L4.377 2.83446L6.69082 5.14828L5.14828 6.69082L2.83446 4.37809V4.377ZM17.4908 19.0334L19.0334 17.4908L21.3472 19.8046L19.8046 21.3472L17.4908 19.0334ZM19.8046 2.83337L21.3472 4.377L19.0334 6.69082L17.4908 5.14828L19.8046 2.83446V2.83337ZM5.14828 17.4908L6.69082 19.0334L4.377 21.3472L2.83446 19.8046L5.14828 17.4908ZM24.0908 10.9999V13.1817H20.8181V10.9999H24.0908ZM3.36355 10.9999V13.1817H0.0908203V10.9999H3.36355Z" fill=""/>
+                  </svg>
+                  <!-- Icon Sun -->
+                  <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
+                </label>
+              </div>
+        <!-- Sección del perfil -->
+        <div id="autenticado" class="profile-container" style="display: none;">
+          <img id="profile-picture" src="" alt="Foto de perfil" class="profile-picture">
+          <input type="file" id="cambiar-foto" accept="image/*" style="display: none;">
+          <button onclick="document.getElementById('cambiar-foto').click()">Cambiar foto</button>
+          <div class="profile-info">
+            <p class="profile-name" id="profile-name"></p>
+            <p class="profile-email" id="profile-email"></p>
+          </div>
+          <button class="logout-button" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+        <link rel="stylesheet" href="header.css">
+          <link rel="stylesheet" href="perfil.css">
+          <style>
+            /* Ocultar los enlaces de "Iniciar Sesión" y "Crear Cuenta" cuando el perfil está visible */
+          #autenticado[style*="display: flex"] ~ a {
+              display: none;
+          }
+          @media (max-width: 768px) {
+          header {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+      
+          .profile-container {
+              margin-left: 0;
+              margin-top: 10px;
+          }
+      
+          header a {
+              margin: 5px 0;
+          }
+      }
+          </style>
+              <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Iniciar Sesión</a>
+              <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Crear Cuenta</a>
+            </div>
+          </div>
+        </div>
+      </header>
+          <!-- ===== Header End ===== -->
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mis Reservas</title>
+<!-- ===== Blog Start ===== -->
+<section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+  <!-- Bg Shapes -->
+  <img src="images/shape-06.svg" alt="Shape" class="h j k" />
+  <img src="images/shape-10.svg" alt="Shape" class="h l m" />
+  <img src="images/shape-03.svg" alt="Shape" class="h n o" />
+  <img src="images/shape-07.svg" alt="Shape" class="h p q" />
+    <style>
+  .reserva-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.reserva-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+.reserva-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.reserva-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #05A678;
+}
+.reserva-status {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.status-paid {
+    background-color: #d4edda;
+    color: #155724;
+}
+.reserva-detail {
+    margin-bottom: 8px;
+}
+.reserva-passengers {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+}
+.no-reservas {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+.btn-eliminar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.btn-eliminar:hover {
+    background-color: #cc0000;
+}
+    </style>
+</head>
+<body>
+    <!-- Incluye tu header aquí -->
+    
+    <div class="reserva-container">
+        <h1>Mis Reservas</h1>
+        <div id="lista-reservas">
+            <!-- Las reservas se cargarán aquí -->
+        </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const usuario = JSON.parse(localStorage.getItem("usuario"));
+    const listaReservas = document.getElementById('lista-reservas');
+    
+    if (!usuario) {
+        listaReservas.innerHTML = `
+            <div class="no-reservas">
+                <p>Debes <a href="signin.html">iniciar sesión</a> para ver tus reservas</p>
+            </div>
+        `;
+        return;
+    }
+
+    if (!usuario.reservas || usuario.reservas.length === 0) {
+        listaReservas.innerHTML = `
+            <div class="no-reservas">
+                <p>No tienes reservas activas</p>
+                <a href="boletos.html" class="btn">Reservar ahora</a>
+            </div>
+        `;
+        return;
+    }
+
+    // Función para mostrar las reservas
+    function mostrarReservas() {
+        listaReservas.innerHTML = ''; // Limpiar lista antes de volver a cargar
+        
+        usuario.reservas.sort((a, b) => new Date(b.fechaReserva) - new Date(a.fechaReserva))
+            .forEach(reserva => {
+                // Calcular monto total
+                let montoTotal = reserva.boletoIda.precio * reserva.cantidadBoletos;
+                if (reserva.tipoBoleto === "redondo" && reserva.boletoRegreso) {
+                    montoTotal += reserva.boletoRegreso.precio * reserva.cantidadBoletos;
+                }
+                
+                const montoFormateado = montoTotal.toLocaleString('es-MX', {
+                    style: 'currency',
+                    currency: 'MXN'
+                });
+                
+                // Obtener últimos 4 dígitos de la tarjeta
+                const ultimosDigitos = reserva.pago?.ultimos4digitos || '****';
+                
+                const reservaElement = document.createElement('div');
+                reservaElement.className = 'reserva-card';
+                reservaElement.innerHTML = `
+                    <div class="reserva-header">
+                        <h3>Reserva #${reserva.numeroReserva}</h3>
+                        <span class="reserva-status ${reserva.estado.toLowerCase()}">
+                            ${reserva.estado}
+                        </span>
+                    </div>
+                    <div class="reserva-content">
+                        <p><strong>${reserva.boletoIda.origen} → ${reserva.boletoIda.destino}</strong></p>
+                        <p>Fecha: ${new Date(reserva.boletoIda.fecha).toLocaleDateString()}</p>
+                        <p>Salida: ${reserva.boletoIda.salida}</p>
+                        <p>Pasajeros: ${reserva.pasajeros.length}</p>
+                        <p>Monto total: ${montoFormateado}</p>
+                        <p>Tarjeta terminada en: **** ${ultimosDigitos}</p>
+                    </div>
+                    <button class="btn-eliminar" data-id="${reserva.id}">Eliminar</button>
+                `;
+                listaReservas.appendChild(reservaElement);
+            });
+
+        // Agregar event listeners a los botones de eliminar
+        document.querySelectorAll('.btn-eliminar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const reservaId = parseInt(this.getAttribute('data-id'));
+                eliminarReserva(reservaId);
+            });
+        });
+    }
+
+    // Función para eliminar una reserva
+    function eliminarReserva(reservaId) {
+        if (confirm('¿Estás seguro de que deseas eliminar esta reserva?')) {
+            // Filtrar las reservas para excluir la que se va a eliminar
+            usuario.reservas = usuario.reservas.filter(reserva => reserva.id !== reservaId);
+            
+            // Actualizar el localStorage
+            localStorage.setItem('usuario', JSON.stringify(usuario));
+            
+            // Volver a mostrar las reservas
+            mostrarReservas();
+            
+            // Si no quedan reservas, mostrar mensaje
+            if (usuario.reservas.length === 0) {
+                listaReservas.innerHTML = `
+                    <div class="no-reservas">
+                        <p>No tienes reservas activas</p>
+                        <a href="boletos.html" class="btn">Reservar ahora</a>
+                    </div>
+                `;
+            }
+        }
+    }
+
+    // Mostrar reservas al cargar la página
+    mostrarReservas();
+});
+</script>
+</section>
+<footer class="GRUVi-footer">
+    <link rel="stylesheet" href="footer.css">
+    <div class="bb ze ki xn">
+      <!-- Footer inferior -->
+      <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+        <div class="animate_top">
+          <ul class="tc wf gg">
+            <ul class="tc wf gg">
+              <li><a href="#" class="xl footer-link" id="openModal">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+        <!-- Redes sociales -->
+    <div class="animate_top">
+      <a href="https://www.facebook.com/profile.php?id=61574228304083" class="footer-social">
+        <img src="images/icons8-facebook.svg" alt="Facebook" width="24" height="24">
+      </a>
+      <a href="https://www.instagram.com/gruvi5?utm_source=qr" class="footer-social">
+        <img src="images/icons8-instagram.svg" alt="Instagram" width="24" height="24">
+      </a>
+    </div>
+  
+        <div class="animate_top">
+          <p>&copy; 2025 GRUVi. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+    <div id="privacyModal" class="modal">
+      <div class="modal-content" style="max-width: 600px; max-height: 70vh; overflow-y: auto; padding: 20px; border-radius: 10px; text-align: justify; line-height: 1.6; background: #fff;">
+        <span class="close" id="closeModal" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+        <h2 style="text-align: center; margin-bottom: 15px;">Aviso de Privacidad</h2>
+        
+        <div class="modal-body">
+          <h3>1. Aceptación de los Términos</h3>
+          <p>Al acceder y utilizar el sitio web de <strong>GRUVi</strong> (en adelante, "el Sitio"), usted acepta cumplir con los siguientes Términos y Condiciones Generales...</p>
+    
+          <h3>2. Descripción del Servicio</h3>
+          <p>GRUVi es una plataforma en línea que proporciona información y servicios relacionados con el transporte urbano...</p>
+    
+          <h3>3. Uso del Sitio</h3>
+          <ul>
+            <li>Usted se compromete a utilizar el Sitio de manera responsable.</li>
+            <li>Queda prohibido el uso del Sitio para fines ilegales, fraudulentos o que puedan dañar su funcionalidad.</li>
+            <li>GRUVi se reserva el derecho de suspender el acceso a quienes incumplan estos términos.</li>
+          </ul>
+    
+          <h3>4. Registro y Cuentas de Usuario</h3>
+          <p>Algunas funcionalidades requieren la creación de una cuenta. Usted es responsable de mantener la confidencialidad de sus credenciales.</p>
+    
+          <h3>5. Propiedad Intelectual</h3>
+          <p>Todo el contenido del Sitio es propiedad de GRUVi y está protegido por leyes de propiedad intelectual.</p>
+    
+          <h3>6. Limitación de Responsabilidad</h3>
+          <p>El uso del Sitio es bajo su propio riesgo. GRUVi no será responsable por daños directos o indirectos derivados del uso del Sitio.</p>
+    
+          <h3>7. Enlaces a Terceros</h3>
+          <p>El Sitio puede contener enlaces a terceros. GRUVi no es responsable de su contenido ni de sus prácticas de privacidad.</p>
+    
+          <h3>8. Modificaciones</h3>
+          <p>GRUVi puede modificar estos términos en cualquier momento. Se recomienda revisarlos periódicamente.</p>
+    
+          <h3>9. Privacidad y Protección de Datos</h3>
+          <p>El uso del Sitio está sujeto a nuestra Política de Privacidad.</p>
+    
+          <h3>10. Ley Aplicable y Jurisdicción</h3>
+          <p>Estos términos se rigen por las leyes del país donde opera GRUVi.</p>
+    
+          <h3>11. Resolución de Conflictos</h3>
+          <p>GRUVi intentará resolver disputas de manera amistosa. Si no se logra, se acudirá a tribunales competentes.</p>
+    
+          <h3>12. Contacto</h3>
+          <p>Para consultas, visite la página de contacto en nuestro sitio web.</p>
+    
+          <p class="modal-date">📅 Fecha de entrada en vigor: <strong>13/03/2025</strong></p>
+        </div>
+      </div>
+    </div> 
+    
+    <script>
+    document.getElementById("openModal").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("privacyModal").style.display = "block";
+    });
+    
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("privacyModal").style.display = "none";
+    });
+    
+    window.onclick = function(event) {
+        let modal = document.getElementById("privacyModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+    </script>
+  </footer>
+  <!-- ===== Footer End ===== -->
+
+  <!-- ====== Back To Top Start ===== -->
+  <button
+  class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+  :class="{ 'uc' : scrollTop }" style="background-color: #1fddad; color: white;"
+>
+  <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+  </svg>
+</button>
+
+
+  <!-- ====== Back To Top End ===== -->
+<script defer src="bundle.js"></script></body>
+</html>

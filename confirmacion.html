@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Reservas</title>
+    <style>
+        .reserva-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .reserva-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .reserva-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .reserva-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #05A678;
+        }
+        .reserva-status {
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .status-paid {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .reserva-detail {
+            margin-bottom: 8px;
+        }
+        .reserva-passengers {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .no-reservas {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Incluye tu header aquí -->
+    
+    <div class="reserva-container">
+        <h1>Mis Reservas</h1>
+        <div id="lista-reservas">
+            <!-- Las reservas se cargarán aquí -->
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const usuario = JSON.parse(localStorage.getItem("usuario"));
+        const listaReservas = document.getElementById('lista-reservas');
+        
+        if (!usuario) {
+            listaReservas.innerHTML = `
+                <div class="no-reservas">
+                    <p>Debes <a href="signin.html">iniciar sesión</a> para ver tus reservas</p>
+                </div>
+            `;
+            return;
+        }
+
+        if (!usuario.reservas || usuario.reservas.length === 0) {
+            listaReservas.innerHTML = `
+                <div class="no-reservas">
+                    <p>No tienes reservas activas</p>
+                    <a href="boletos.html" class="btn-reservar">Reservar ahora</a>
+                </div>
+            `;
+            return;
+        }
+
+        // Mostrar cada reserva
+        usuario.reservas.forEach(reserva => {
+            const reservaElement = document.createElement('div');
+            reservaElement.className = 'reserva-card';
+            reservaElement.innerHTML = `
+                <div class="reserva-header">
+                    <div class="reserva-title">
+                        ${reserva.boletoIda.origen} → ${reserva.boletoIda.destino}
+                        ${reserva.boletoRegreso ? ` ↔ ${reserva.boletoRegreso.destino} → ${reserva.boletoRegreso.origen}` : ''}
+                    </div>
+                    <div class="reserva-status status-${reserva.estado.toLowerCase()}">
+                        ${reserva.estado}
+                    </div>
+                </div>
+                
+                <div class="reserva-detail">
+                    <strong>Fecha de reserva:</strong> ${new Date(reserva.fechaReserva).toLocaleString()}
+                </div>
+                
+                <div class="reserva-detail">
+                    <strong>Viaje de ida:</strong> ${new Date(reserva.boletoIda.fecha).toLocaleDateString()} - ${reserva.boletoIda.salida}
+                </div>
+                
+                ${reserva.boletoRegreso ? `
+                <div class="reserva-detail">
+                    <strong>Viaje de regreso:</strong> ${new Date(reserva.boletoRegreso.fecha).toLocaleDateString()} - ${reserva.boletoRegreso.salida}
+                </div>
+                ` : ''}
+                
+                <div class="reserva-passengers">
+                    <strong>Pasajeros:</strong>
+                    <ul>
+                        ${reserva.pasajeros.map(pasajero => `
+                            <li>${pasajero.nombre} ${pasajero.apellidos} - Asiento: ${pasajero.asientoIda}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+            listaReservas.appendChild(reservaElement);
+        });
+    });
+    </script>
+</body>
+</html>

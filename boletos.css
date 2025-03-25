@@ -137,43 +137,44 @@ input[type="radio"] {
     margin-top: 20px;
 }
 
-#asientos {
+/* Estilos para la cuadrícula de asientos */
+.asientos-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas */
     gap: 10px;
-    width: 250px;
-    margin: auto;
-}
-
-.asiento {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .asiento {
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #05A678;
-    border-radius: 10px;
-    background-color: #f7f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
-}
-
-.asiento.ocupado {
-    background-color: red;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .asiento.disponible {
+    background-color: #f8f9fa;
+  }
+  
+  .asiento.disponible:hover {
+    background-color: #e9ecef;
+  }
+  
+  .asiento.ocupado {
+    background-color: #dc3545;
+    color: white;
     cursor: not-allowed;
-}
-
-.asiento.disponible:hover {
-    background-color: #99F2E2;
+  }
+  
+  .asiento.seleccionado {
+    background-color: #05A678;
     color: white;
-}
-
-.asiento.seleccionado {
-    background-color: #30CFF2;
-    color: white;
-}
-
-/* Espacio en el centro */
-.asiento:nth-child(2n) {
-    margin-right: 15px;
-}
+    transform: scale(1.05);
+  }

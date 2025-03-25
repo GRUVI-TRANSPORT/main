@@ -51,7 +51,7 @@
               <ul class="tc _o sf yo cg ep">
                 <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
                 <li><a href="boletos.html" class="xl">Boletos</a></li>
-                <li><a href="reserva.html" class="xl">Reservas</a></li>
+                <li><a href="reservas.html" class="xl">Reservas</a></li>
                 <li><a href="nosotros.html" class="xl">Nosotros</a></li>
                 <li><a href="contacto.html" class="xl">Contacto</a></li>
               </ul>
@@ -71,7 +71,9 @@
               </div>
         <!-- Sección del perfil -->
         <div id="autenticado" class="profile-container" style="display: none;">
-          <img src="images/profile.jpg" alt="Foto de perfil" class="profile-picture">
+          <img id="profile-picture" src="" alt="Foto de perfil" class="profile-picture">
+          <input type="file" id="cambiar-foto" accept="image/*" style="display: none;">
+          <button onclick="document.getElementById('cambiar-foto').click()">Cambiar foto</button>
           <div class="profile-info">
             <p class="profile-name" id="profile-name"></p>
             <p class="profile-email" id="profile-email"></p>
@@ -108,310 +110,372 @@
         </div>
       </header>
           <!-- ===== Header End ===== -->
-           <!-- ===== Pricing Table Start ===== -->
-      
 <!-- ===== Blog Start ===== -->
-<section class="ji gp uq">
-  <!-- Section Title Start -->
-  <div
-    x-data="{ sectionTitle: `Boletos GRUVi`,}"
-  >
-    <div class="animate_top bb ze rj ki xn vq">
-<h2
-      x-text="sectionTitle"
-      class="fk vj pr kk wm on/5 gq/2 bb _b"
->
-</h2>
-</div>
-  </div>
-  
-</head>
+<section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+  <!-- Bg Shapes -->
+  <img src="images/shape-06.svg" alt="Shape" class="h j k" />
+  <img src="images/shape-10.svg" alt="Shape" class="h l m" />
+  <img src="images/shape-03.svg" alt="Shape" class="h n o" />
+  <img src="images/shape-07.svg" alt="Shape" class="h p q" />
 
-<body>
-  <main>
-      <section class="busqueda">
-          <h2>Compra de Boleto</h2>
-          <form id="formulario-boletos">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-            <!-- Sección para seleccionar Sencillo o Redondo -->
-            <div class="tipo-boleto-container">
-              <label>
-              <input type="radio" name="tipo-boleto" value="sencillo" checked> Sencillo 
+  <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+    <!-- Bg Border -->
+    <span class="rc h r s zd/2 od zg gh" id="span1"></span>
+    <span class="rc h r q zd/2 od xg mh" id="span2"></span>
+    <style>
+      .rc.h.r.s.zd\/2.od.zg.gh {
+        background-color: #29F2A9;  /* Color de fondo para el primer span */
+      }
+    
+      .rc.h.r.q.zd\/2.od.xg.mh {
+        background-color: #05A678;  /* Color de fondo para el segundo span */
+      }
+    </style>
+    
+    <div class="rj">
+        <h2 class="ek ck kk wm xb">Compra de Boletos</h2>
+        <span class="i rc sj hk xj">
+            <span class="rc h s z/2 nd oe rh tm"></span>
+            <span class="rc h q z/2 nd oe rh tm"></span>
+            Selecciona tu boleto
+        </span>
+    </div>
+    
+    <div class="wb">
+        <label class="rc kk wm vb">Tipo de boleto:</label>
+        <div class="tipo-boleto-container" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <label style="display: flex; align-items: center;">
+                <input type="radio" name="tipo-boleto" value="sencillo" checked> Sencillo
             </label>
-            <label>
-              <input type="radio" name="tipo-boleto" value="redondo"> Redondo
+            <label style="display: flex; align-items: center;">
+                <input type="radio" name="tipo-boleto" value="redondo"> Redondo
             </label>
-          </div>
-          <label for="origen">¿De dónde viajas?</label>
-          <input type="text" id="origen" placeholder="Escribe o selecciona tu ciudad" list="ciudades-origen" required>
-          <datalist id="ciudades-origen">
-            <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
-            <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
-            <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
-            <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
-            <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
-            <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
-            <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
-            <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
-            <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
-          </datalist>
-          <label for="destino">¿A dónde viajas?</label>
-          <input type="text" id="destino" placeholder="Escribe o selecciona tu ciudad" list="ciudades-destino" required>
-          <datalist id="ciudades-destino">
-            <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
-              <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
-              <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
-              <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
-              <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
-              <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
-              <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
-              <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
-              <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
-          </datalist>
-          <label for="fecha-ida">Fecha de ida:</label>
-          <input type="date" id="fecha-ida" >
-          
-          <!-- Contenedor de Fecha de Regreso -->
-          <div id="fecha-regreso-container">
-            <label for="fecha-regreso">Fecha de regreso:</label>
-            <input type="date" id="fecha-regreso">
-          </div>
-            </div>
-            <button type="button" id="buscar">Buscar</button>
-      </form>
-      
-      <!-- Sección de Boletos Disponibles (Oculta al inicio) -->
-      <div id="boletos-disponibles" style="display: none;">
-            <h3>Boletos Disponibles</h3>
-            <div id="lista-boletos"></div>
-      </div>
-      <!-- Sección de selección de asientos (oculta al inicio) -->
-<div id="seleccion-asientos" style="display: none;">
-  <h3>Escoge tus asientos</h3>
-  <p id="info-boleto"></p>
-  
-  <div class="asientos-container">
-      <div id="asientos"></div>
-  </div>
-  
-  <h4>Datos del pasajero</h4>
-  <form id="formulario-pasajero">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
-      
-      <label for="apellidos">Apellidos:</label>
-      <input type="text" id="apellidos" required>
-      
-      
-      
-      <button type="submit">Confirmar Asiento</button>
-  </form>
-</div>
-  </section>
-  </main>
-
-  <script src="boletos.js"></script>
-  <link rel="stylesheet" href="boletos.css">
-</body>
-
-</section>
-<!-- ===== Blog End ===== -->
-<!-- ===== Team Start ===== -->
-      <section class="i pg ji gp uq">
-        <!-- Bg Shapes -->
-        <span class="rc h s r vd fd/5 fh rm"></span>
-        <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
-        <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
-        <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
-        <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
-<!-- ===== Footer Start ===== -->
-<footer>
-  <div class="bb ze ki xn 2xl:ud-px-0">
-    <!-- Footer Top -->
-    <div class="ji gp">
-      <div class="tc uf ap gg fp">
-        <div class="animate_top zd/2 to/4">
-          <a href="index.html">
-            <img src="images/logotipo.png" alt="Logo" class="om" id="imagen-única"/>
-            <img src="images/logotipo.png" alt="Logo" class="xc nm" id="imagen-única" />
-          </a>
-
-          <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-          <ul class="tc wf cg">
-            <li>
-              <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_48_1499)">
-                    <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" fill="" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_48_1499">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_48_1502)">
-                    <path
-                      d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
-                      fill=""
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_48_1502">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_48_1505)">
-                    <path
-                      d="M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z"
-                      fill=""
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_48_1505">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_48_1508)">
-                    <path
-                      d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_48_1508">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
+    </div>
+    
+    <div class="wb">
+        <label class="rc kk wm vb" for="cantidad-boletos">Cantidad de boletos:</label>
+        <select id="cantidad-boletos" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    
+    <form class="sb" id="formulario-boletos">
+        <div class="wb">
+            <label class="rc kk wm vb" for="origen">¿De dónde viajas?</label>
+            <input
+                type="text"
+                id="origen"
+                placeholder="Escribe o selecciona tu ciudad"
+                list="ciudades-origen"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                required
+            />
+            <datalist id="ciudades-origen">
+                <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
+                <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
+                <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
+                <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
+                <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
+                <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
+                <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
+                <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
+                <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
+            </datalist>
+        </div>
+        
+        <div class="wb">
+            <label class="rc kk wm vb" for="destino">¿A dónde viajas?</label>
+            <input
+                type="text"
+                id="destino"
+                placeholder="Escribe o selecciona tu ciudad"
+                list="ciudades-destino"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                required
+            />
+            <datalist id="ciudades-destino">
+                <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
+                <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
+                <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
+                <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
+                <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
+                <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
+                <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
+                <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
+                <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
+            </datalist>
+        </div>
+        
+        <div class="wb">
+            <label class="rc kk wm vb" for="fecha-ida">Fecha de ida:</label>
+            <input
+                type="date"
+                id="fecha-ida"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+            />
+        </div>
+        
+        <div class="wb" id="fecha-regreso-container">
+            <label class="rc kk wm vb" for="fecha-regreso">Fecha de regreso:</label>
+            <input
+                type="date"
+                id="fecha-regreso"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                readonly
+            />
+        </div>
+        
+        <button type="button" id="buscar" class="vd rj ek rc rg gh lk ml il _l gi hi">
+            Buscar
+        </button>
+    </form>
 
-        <div class="vd ro tc sf rn un gg vn">
-          <div class="animate_top">
-            <h4 class="kk wm tj ec">Quick Links</h4>
+    <!-- Sección de boletos disponibles (oculta al inicio) -->
+    <div id="boletos-disponibles" style="display: none;">
+        <h3 class="ek ck kk wm xb">Boletos disponibles</h3>
+        <div id="lista-boletos-ida" class="gruvi-boletos"></div>
+        <div id="lista-boletos-regreso-container" style="display: none;">
+            <h4>Boletos de regreso</h4>
+            <div id="lista-boletos-regreso" class="gruvi-boletos"></div>
+        </div>
+    </div>
 
-            <ul>
-              <li><a href="index.html" class="sc xl vb">Inicio</a></li>
-              <li><a href="#" class="sc xl vb">Product</a></li>
-              <li>
-                <a href="#" class="sc xl vb">
-                  Careers 
-                  <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
-                </a>
-              </li>
-              <li><a href="#" class="sc xl vb">Pricing</a></li>
-            </ul>
-          </div>
+    <!-- Sección de selección de asientos -->
+    <div id="seleccion-asientos" style="display: none;">
+        <h3 class="ek ck kk wm xb">Escoge tus asientos</h3>
+        <p id="info-boleto"></p>
+        <div id="asientos" class="asientos-columnas"></div>
+    </div>
 
-          <div class="animate_top">
-            <h4 class="kk wm tj ec">Services</h4>
-
-            <ul>
-              <li><a href="#" class="sc xl vb">Web Development</a></li>
-              <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-              <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-              <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
-            </ul>
-          </div>
-
-          <div class="animate_top">
-            <h4 class="kk wm tj ec">Support</h4>
-
-            <ul>
-              <li><a href="#" class="sc xl vb">Company</a></li>
-              <li><a href="#" class="sc xl vb">Press media</a></li>
-              <li><a href="#" class="sc xl vb">Our Blog</a></li>
-              <li><a href="#" class="sc xl vb">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="animate_top">
-            <h4 class="kk wm tj ec">Newsletter</h4>
-            <p class="ac qe">Subscribe to receive future updates</p>
-
-            <form action="https://formbold.com/s/unique_form_id" method="POST">
-              <div class="i">
+    <!-- Sección de Datos del Pasajero (oculta al inicio) -->
+    <div id="datos-pasajero" style="display: none;">
+        <h4 class="ek ck kk wm xb">Datos del pasajero <span id="numero-pasajero"></span></h4>
+        <div class="sb">
+            <div class="wb">
+                <label class="rc kk wm vb" for="nombre">Nombre:</label>
                 <input
-                  type="text"
-                  placeholder="Email address"
-                  class="vd sm _g ch pm vk xm rg gm dm dn gi mi"
+                    type="text"
+                    id="nombre"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
                 />
-
-                <button class="h q fi">
-                  <svg class="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_48_1487)">
-                      <path
-                        d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
-                        fill=""
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_48_1487">
-                        <rect width="20" height="20" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-              </div>
-            </form>
+            </div>
+            <div class="wb">
+                <label class="rc kk wm vb" for="apellidos">Apellidos:</label>
+                <input
+                    type="text"
+                    id="apellidos"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+            </div>
+            <button type="button" id="confirmar-asiento" class="vd rj ek rc rg gh lk ml il _l gi hi">
+                Confirmar Asiento
+            </button>
+        </div>
+    </div>
+    
+    <!-- Sección 5: Resumen y pago -->
+    <div id="resumen-pago" style="display: none;">
+        <h2 class="ek ck kk wm xb">Resumen de tu reserva</h2>
+        <div id="resumen-datos"></div>
+        
+        <h3 class="ek ck kk wm xb">Método de pago</h3>
+        <div class="sb">
+            <div class="wb">
+                <label class="rc kk wm vb" for="tipo-tarjeta">Tipo de Tarjeta:</label>
+                <select
+                    id="tipo-tarjeta"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                >
+                    <option value="">Seleccionar...</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="otra">Otra</option>
+                </select>
+            </div>
+            
+            <div class="wb">
+                <label class="rc kk wm vb" for="numero-tarjeta">Número de Tarjeta:</label>
+                <input
+                    type="text"
+                    id="numero-tarjeta"
+                    placeholder="1234 5678 9012 3456"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+                <small class="error-message" id="error-tarjeta" style="color: red; display: none;"></small>
+            </div>
+            
+            <div class="wb">
+                <label class="rc kk wm vb" for="nombre-tarjeta">Nombre en la Tarjeta:</label>
+                <input
+                    type="text"
+                    id="nombre-tarjeta"
+                    placeholder="Como aparece en la tarjeta"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+                <small class="error-message" id="error-nombre" style="color: red; display: none;"></small>
+            </div>
+            
+            <div class="wb" style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <label class="rc kk wm vb" for="fecha-expiracion">Fecha Expiración (MM/AA):</label>
+                    <input
+                        type="text"
+                        id="fecha-expiracion"
+                        placeholder="MM/AA"
+                        maxlength="5"
+                        class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                        required
+                    />
+                    <small class="error-message" id="error-fecha" style="color: red; display: none;"></small>
+                </div>
+                <div style="flex: 1;">
+                    <label class="rc kk wm vb" for="cvv">CVV:</label>
+                    <input
+                        type="text"
+                        id="cvv"
+                        maxlength="3"
+                        placeholder="123"
+                        class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                        required
+                    />
+                    <small class="error-message" id="error-cvv" style="color: red; display: none;"></small>
+                </div>
+            </div>
+            
+            <button type="button" id="finalizar-compra" class="vd rj ek rc rg gh lk ml il _l gi hi">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+    
+    <script src="compra.js" defer></script>
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+</div>
+    
+</section>
+    <!-- ===== Footer Start ===== -->
+    <footer class="GRUVi-footer">
+      <link rel="stylesheet" href="footer.css">
+      <div class="bb ze ki xn">
+        <!-- Footer inferior -->
+        <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+          <div class="animate_top">
+            <ul class="tc wf gg">
+              <ul class="tc wf gg">
+                <li><a href="#" class="xl footer-link" id="openModal">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+          <!-- Redes sociales -->
+      <div class="animate_top">
+        <a href="https://www.facebook.com/profile.php?id=61574228304083" class="footer-social">
+          <img src="images/icons8-facebook.svg" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/gruvi5?utm_source=qr" class="footer-social">
+          <img src="images/icons8-instagram.svg" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    
+          <div class="animate_top">
+            <p>&copy; 2025 GRUVi. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Footer Top -->
-
-    <!-- Footer Bottom -->
-    <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
-      <div class="animate_top">
-        <ul class="tc wf gg">
-          <li><a href="#" class="xl">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="animate_top">
-        <p>&copy; 2025 Base. All rights reserved</p>
-      </div>
-    </div>
-    <!-- Footer Bottom -->
-  </div>
-</footer>
-
+      <div id="privacyModal" class="modal">
+        <div class="modal-content" style="max-width: 600px; max-height: 70vh; overflow-y: auto; padding: 20px; border-radius: 10px; text-align: justify; line-height: 1.6; background: #fff;">
+          <span class="close" id="closeModal" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+          <h2 style="text-align: center; margin-bottom: 15px;">Aviso de Privacidad</h2>
+          
+          <div class="modal-body">
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al acceder y utilizar el sitio web de <strong>GRUVi</strong> (en adelante, "el Sitio"), usted acepta cumplir con los siguientes Términos y Condiciones Generales...</p>
+      
+            <h3>2. Descripción del Servicio</h3>
+            <p>GRUVi es una plataforma en línea que proporciona información y servicios relacionados con el transporte urbano...</p>
+      
+            <h3>3. Uso del Sitio</h3>
+            <ul>
+              <li>Usted se compromete a utilizar el Sitio de manera responsable.</li>
+              <li>Queda prohibido el uso del Sitio para fines ilegales, fraudulentos o que puedan dañar su funcionalidad.</li>
+              <li>GRUVi se reserva el derecho de suspender el acceso a quienes incumplan estos términos.</li>
+            </ul>
+      
+            <h3>4. Registro y Cuentas de Usuario</h3>
+            <p>Algunas funcionalidades requieren la creación de una cuenta. Usted es responsable de mantener la confidencialidad de sus credenciales.</p>
+      
+            <h3>5. Propiedad Intelectual</h3>
+            <p>Todo el contenido del Sitio es propiedad de GRUVi y está protegido por leyes de propiedad intelectual.</p>
+      
+            <h3>6. Limitación de Responsabilidad</h3>
+            <p>El uso del Sitio es bajo su propio riesgo. GRUVi no será responsable por daños directos o indirectos derivados del uso del Sitio.</p>
+      
+            <h3>7. Enlaces a Terceros</h3>
+            <p>El Sitio puede contener enlaces a terceros. GRUVi no es responsable de su contenido ni de sus prácticas de privacidad.</p>
+      
+            <h3>8. Modificaciones</h3>
+            <p>GRUVi puede modificar estos términos en cualquier momento. Se recomienda revisarlos periódicamente.</p>
+      
+            <h3>9. Privacidad y Protección de Datos</h3>
+            <p>El uso del Sitio está sujeto a nuestra Política de Privacidad.</p>
+      
+            <h3>10. Ley Aplicable y Jurisdicción</h3>
+            <p>Estos términos se rigen por las leyes del país donde opera GRUVi.</p>
+      
+            <h3>11. Resolución de Conflictos</h3>
+            <p>GRUVi intentará resolver disputas de manera amistosa. Si no se logra, se acudirá a tribunales competentes.</p>
+      
+            <h3>12. Contacto</h3>
+            <p>Para consultas, visite la página de contacto en nuestro sitio web.</p>
+      
+            <p class="modal-date">📅 Fecha de entrada en vigor: <strong>13/03/2025</strong></p>
+          </div>
+        </div>
+      </div> 
+      
+      <script>
+      document.getElementById("openModal").addEventListener("click", function(event) {
+          event.preventDefault();
+          document.getElementById("privacyModal").style.display = "block";
+      });
+      
+      document.getElementById("closeModal").addEventListener("click", function() {
+          document.getElementById("privacyModal").style.display = "none";
+      });
+      
+      window.onclick = function(event) {
+          let modal = document.getElementById("privacyModal");
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      };
+      </script>
+    </footer>
     <!-- ===== Footer End ===== -->
 
     <!-- ====== Back To Top Start ===== -->
     <button
-  class="xc wf xf ie ld vg sr gh tr g sa ta _a"
-  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
-  :class="{ 'uc' : scrollTop }" style="background-color: #31b392; color: white;"
->
-  <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-  </svg>
-</button>
+    class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+    @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+    @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+    :class="{ 'uc' : scrollTop }" style="background-color: #1fddad; color: white;"
+  >
+    <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg>
+  </button>
     <!-- ====== Back To Top End ===== -->
   <script defer src="bundle.js"></script></body>
 </html>

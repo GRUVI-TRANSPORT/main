@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,46 +25,7 @@
               <img class="om" src="images/logotipo.png" alt="Logo Light" id="imagen-única"/>
               <img class="xc nm" src="images/logotipo.png" alt="Logo Dark" id="imagen-única">
             </a>
-      <script>
-        // Verificar si el usuario ha iniciado sesión
-        function verificarSesion() {
-            const usuario = JSON.parse(localStorage.getItem("usuario"));
-      
-            // Obtener los enlaces de "Iniciar Sesión" y "Crear Cuenta"
-            const enlaceIniciarSesion = document.querySelector('a[href="signin.html"]');
-            const enlaceCrearCuenta = document.querySelector('a[href="signup.html"]');
-      
-            if (usuario) {
-                // Ocultar los enlaces de "Iniciar Sesión" y "Crear Cuenta"
-                if (enlaceIniciarSesion) enlaceIniciarSesion.style.display = "none";
-                if (enlaceCrearCuenta) enlaceCrearCuenta.style.display = "none";
-      
-                // Mostrar la sección de perfil
-                document.getElementById("autenticado").style.display = "flex";
-      
-                // Mostrar la información del usuario
-                document.getElementById("profile-name").textContent = usuario.nombre;
-                document.getElementById("profile-email").textContent = usuario.email;
-            } else {
-                // Mostrar los enlaces de "Iniciar Sesión" y "Crear Cuenta"
-                if (enlaceIniciarSesion) enlaceIniciarSesion.style.display = "inline-block";
-                if (enlaceCrearCuenta) enlaceCrearCuenta.style.display = "inline-block";
-      
-                // Ocultar la sección de perfil
-                document.getElementById("autenticado").style.display = "none";
-            }
-        }
-      
-        // Cerrar sesión
-        function cerrarSesion() {
-            localStorage.removeItem("usuario"); // Eliminar la información del usuario
-            window.location.href = "index.html"; // Redirigir a la página de inicio
-        }
-      
-        // Verificar el estado de la sesión al cargar la página
-        window.onload = verificarSesion;
-      </script>
-      
+            <script src="auth.js" defer></script>
             <!-- Hamburger Toggle BTN -->
             <button class="po rc" @click="navigationOpen = !navigationOpen">
               <span class="rc i pf re pd">
@@ -91,32 +51,7 @@
               <ul class="tc _o sf yo cg ep">
                 <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
                 <li><a href="boletos.html" class="xl">Boletos</a></li>
-                <li class="c i" x-data="{ dropdown: false }">
-                  <a
-                    href="#"
-                    class="xl tc wf yf bg"
-                    @click.prevent="dropdown = !dropdown"
-                    :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
-                  >
-                    Mis reservas
-      
-                    <svg
-                    :class="{ 'wh': dropdown }"
-                    class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                    </svg>
-                  </a>
-      
-                  <!-- Dropdown Start -->
-                  <ul class="a" :class="{ 'tc': dropdown }">
-                    <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                    <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                    <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-                    <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-                    <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
-                  </ul>
-                  <!-- Dropdown End -->
-                </li>
+                <li><a href="reservas.html" class="xl">Reservas</a></li>
                 <li><a href="nosotros.html" class="xl">Nosotros</a></li>
                 <li><a href="contacto.html" class="xl">Contacto</a></li>
               </ul>
@@ -136,183 +71,411 @@
               </div>
         <!-- Sección del perfil -->
         <div id="autenticado" class="profile-container" style="display: none;">
-          <img src="images/profile.jpg" alt="Foto de perfil" class="profile-picture">
+          <img id="profile-picture" src="" alt="Foto de perfil" class="profile-picture">
+          <input type="file" id="cambiar-foto" accept="image/*" style="display: none;">
+          <button onclick="document.getElementById('cambiar-foto').click()">Cambiar foto</button>
           <div class="profile-info">
-            <p class="profile-name" id="profile-name">Juan Pérez</p>
-            <p class="profile-email" id="profile-email">juan.perez@example.com</p>
+            <p class="profile-name" id="profile-name"></p>
+            <p class="profile-email" id="profile-email"></p>
           </div>
           <button class="logout-button" onclick="cerrarSesion()">Cerrar sesión</button>
         </div>
-        <style>
-          /* Estilos para el contenedor del perfil */
-          .profile-container {
-              display: flex;
-              align-items: center;
-              background-color: #f1f1f1;
-              padding: 10px;
-              border-radius: 10px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-              margin-left: 20px; /* Ajusta el margen según sea necesario */
-          }
-      
-          /* Estilos para la foto de perfil */
-          .profile-picture {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              margin-right: 10px;
-          }
-      
-          /* Estilos para la información del perfil */
-          .profile-info {
-              flex-grow: 1;
-          }
-      
-          .profile-name {
-              font-weight: bold;
-              margin: 0;
-              font-size: 14px;
-          }
-      
-          .profile-email {
-              font-size: 12px;
-              color: #555;
-              margin: 0;
-          }
-      
-          /* Ocultar los enlaces de "Iniciar Sesión" y "Crear Cuenta" cuando el perfil está visible */
+        <link rel="stylesheet" href="header.css">
+          <link rel="stylesheet" href="perfil.css">
+          <style>
+            /* Ocultar los enlaces de "Iniciar Sesión" y "Crear Cuenta" cuando el perfil está visible */
           #autenticado[style*="display: flex"] ~ a {
               display: none;
           }
-      </style>
+          @media (max-width: 768px) {
+          header {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+      
+          .profile-container {
+              margin-left: 0;
+              margin-top: 10px;
+          }
+      
+          header a {
+              margin: 5px 0;
+          }
+      }
+          </style>
               <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Iniciar Sesión</a>
               <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Crear Cuenta</a>
             </div>
           </div>
         </div>
       </header>
-      
           <!-- ===== Header End ===== -->
 <!-- ===== Blog Start ===== -->
-<section class="ji gp uq">
-  <!-- Section Title Start -->
-  <div
-    x-data="{ sectionTitle: `Boletos GRUVi`,}"
-  >
-    <div class="animate_top bb ze rj ki xn vq">
-<h2
-      x-text="sectionTitle"
-      class="fk vj pr kk wm on/5 gq/2 bb _b"
->
-</h2>
-</div>
-  </div>
-  
-</head>
+<section class="i pg fh rm ki xn vq gj qp gr hj rp hr">
+  <!-- Bg Shapes -->
+  <img src="images/shape-06.svg" alt="Shape" class="h j k" />
+  <img src="images/shape-10.svg" alt="Shape" class="h l m" />
+  <img src="images/shape-03.svg" alt="Shape" class="h n o" />
+  <img src="images/shape-07.svg" alt="Shape" class="h p q" />
 
-<body>
-  <main>
-      <section class="busqueda">
-          <h2>Compra de Boleto</h2>
-          <form id="formulario-boletos">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-            <!-- Sección para seleccionar Sencillo o Redondo -->
-            <div class="tipo-boleto-container">
-              <label>
-              <input type="radio" name="tipo-boleto" value="sencillo" checked> Sencillo 
-            </label>
-            <label>
-              <input type="radio" name="tipo-boleto" value="redondo"> Redondo
-            </label>
-          </div>
-            <input type="text" id="origen" placeholder="¿De dónde viajas?" required>
-            <input type="text" id="destino" placeholder="¿A dónde viajas?" required>
-            <label for="fecha-ida">Fecha de ida:</label>
-            <input type="text" id="fecha-ida" required>
-          
-            <!-- Contenedor de Fecha de Regreso -->
-            <div id="fecha-regreso-container" style="display: none;">
-              <label for="fecha-regreso">Fecha de regreso:</label>
-              <input type="text" id="fecha-regreso">
-            </div>
-            <button type="button" id="buscar">Buscar</button>
-      </form>
-      
-      <!-- Sección de Boletos Disponibles (Oculta al inicio) -->
-      <div id="boletos-disponibles" style="display: none;">
-            <h3>Boletos Disponibles</h3>
-            <div id="lista-boletos"></div>
-      </div>
-      <!-- Sección de selección de asientos (oculta al inicio) -->
-<div id="seleccion-asientos" style="display: none;">
-  <h3>Escoge tus asientos</h3>
-  <p id="info-boleto"></p>
-  
-  <div class="asientos-container">
-      <div id="asientos"></div>
-  </div>
-  
-  <h4>Datos del pasajero</h4>
-  <form id="formulario-pasajero">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
-      
-      <label for="apellidos">Apellidos:</label>
-      <input type="text" id="apellidos" required>
-      
-      <label for="tipo-boleto">Tipo de boleto:</label>
-      <select id="tipo-boleto">
-          <option value="Adulto">Adulto</option>
-          <option value="Niño">Niño</option>
-          <option value="Estudiante">Estudiante</option>
-      </select>
-      
-      <button type="submit">Confirmar Asiento</button>
-  </form>
-</div>
-  </section>
-  </main>
-
-  <script src="compra.js"></script>
-  <link rel="stylesheet" href="compra.css">
-</body>
-
-</section>
-<!-- ===== Blog End ===== -->
-
-<!-- ===== Footer Start ===== -->
-<footer class="GRUVi-footer">
-  <div class="bb ze ki xn">
-    <!-- Footer inferior -->
-    <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
-      <div class="animate_top">
-        <ul class="tc wf gg">
-          <li><a href="#" class="xl footer-link">Aviso de privacidad</a></li>
-        </ul>
-      </div>
-
-      <div class="animate_top">
-        <p>&copy; 2025 GRUVi. Todos los derechos reservados.</p>
-      </div>
+  <div class="animate_top bb af i va sg hh sm vk xm yi _n jp hi ao kp">
+    <!-- Bg Border -->
+    <span class="rc h r s zd/2 od zg gh" id="span1"></span>
+    <span class="rc h r q zd/2 od xg mh" id="span2"></span>
+    <style>
+      .rc.h.r.s.zd\/2.od.zg.gh {
+        background-color: #29F2A9;  /* Color de fondo para el primer span */
+      }
+    
+      .rc.h.r.q.zd\/2.od.xg.mh {
+        background-color: #05A678;  /* Color de fondo para el segundo span */
+      }
+    </style>
+    
+    <div class="rj">
+        <h2 class="ek ck kk wm xb">Compra de Boletos</h2>
+        <span class="i rc sj hk xj">
+            <span class="rc h s z/2 nd oe rh tm"></span>
+            <span class="rc h q z/2 nd oe rh tm"></span>
+            Selecciona tu boleto
+        </span>
     </div>
-  </div>
-</footer>
+    
+    <div class="wb">
+        <label class="rc kk wm vb">Tipo de boleto:</label>
+        <div class="tipo-boleto-container" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <label style="display: flex; align-items: center;">
+                <input type="radio" name="tipo-boleto" value="sencillo" checked> Sencillo
+            </label>
+            <label style="display: flex; align-items: center;">
+                <input type="radio" name="tipo-boleto" value="redondo"> Redondo
+            </label>
+        </div>
+    </div>
+    
+    <div class="wb">
+        <label class="rc kk wm vb" for="cantidad-boletos">Cantidad de boletos:</label>
+        <select id="cantidad-boletos" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    
+    <form class="sb" id="formulario-boletos">
+        <div class="wb">
+            <label class="rc kk wm vb" for="origen">¿De dónde viajas?</label>
+            <input
+                type="text"
+                id="origen"
+                placeholder="Escribe o selecciona tu ciudad"
+                list="ciudades-origen"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                required
+            />
+            <datalist id="ciudades-origen">
+                <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
+                <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
+                <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
+                <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
+                <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
+                <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
+                <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
+                <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
+                <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
+            </datalist>
+        </div>
+        
+        <div class="wb">
+            <label class="rc kk wm vb" for="destino">¿A dónde viajas?</label>
+            <input
+                type="text"
+                id="destino"
+                placeholder="Escribe o selecciona tu ciudad"
+                list="ciudades-destino"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                required
+            />
+            <datalist id="ciudades-destino">
+                <option value="Monterrey" data-descripcion="Ciudad industrial rodeada de montañas.">
+                <option value="Saltillo" data-descripcion="Ciudad colonial con tradición sarapera">
+                <option value="Linares" data-descripcion="Pueblo con arquitectura colonial y dulces típicos">
+                <option value="San José de Raíces" data-descripcion="Pequeña comunidad con historia y paisajes naturales">
+                <option value="Santiago" data-descripcion="Pueblo mágico con beleza natural">
+                <option value="Bustamante" data-descripcion="Pueblo con grutas y tradición panaderas">
+                <option value="Rayones" data-descripcion="Pequeño pueblo con paisajes naturales únicos">
+                <option value="Montemorelos" data-descripcion="Ciudad conocida por su producción de cuero y zapatos.Zona frutícola con atractivos naturales">
+                <option value="Galeana" data-descripcion="Municipio con la montaña más alta del noreste">
+            </datalist>
+        </div>
+        
+        <div class="wb">
+            <label class="rc kk wm vb" for="fecha-ida">Fecha de ida:</label>
+            <input
+                type="date"
+                id="fecha-ida"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+            />
+        </div>
+        
+        <div class="wb" id="fecha-regreso-container">
+            <label class="rc kk wm vb" for="fecha-regreso">Fecha de regreso:</label>
+            <input
+                type="date"
+                id="fecha-regreso"
+                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                readonly
+            />
+        </div>
+        
+        <button type="button" id="buscar" class="vd rj ek rc rg gh lk ml il _l gi hi">
+            Buscar
+        </button>
+    </form>
+
+    <!-- Sección de boletos disponibles (oculta al inicio) -->
+    <div id="boletos-disponibles" style="display: none;">
+        <h3 class="ek ck kk wm xb">Boletos disponibles</h3>
+        <div id="lista-boletos-ida" class="gruvi-boletos"></div>
+        <div id="lista-boletos-regreso-container" style="display: none;">
+            <h4>Boletos de regreso</h4>
+            <div id="lista-boletos-regreso" class="gruvi-boletos"></div>
+        </div>
+    </div>
+
+    <!-- Sección de selección de asientos -->
+    <div id="seleccion-asientos" style="display: none;">
+        <h3 class="ek ck kk wm xb">Escoge tus asientos</h3>
+        <p id="info-boleto"></p>
+        <div id="asientos" class="asientos-columnas"></div>
+    </div>
+
+    <!-- Sección de Datos del Pasajero (oculta al inicio) -->
+    <div id="datos-pasajero" style="display: none;">
+        <h4 class="ek ck kk wm xb">Datos del pasajero <span id="numero-pasajero"></span></h4>
+        <div class="sb">
+            <div class="wb">
+                <label class="rc kk wm vb" for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+            </div>
+            <div class="wb">
+                <label class="rc kk wm vb" for="apellidos">Apellidos:</label>
+                <input
+                    type="text"
+                    id="apellidos"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+            </div>
+            <button type="button" id="confirmar-asiento" class="vd rj ek rc rg gh lk ml il _l gi hi">
+                Confirmar Asiento
+            </button>
+        </div>
+    </div>
+    
+    <!-- Sección 5: Resumen y pago -->
+    <div id="resumen-pago" style="display: none;">
+        <h2 class="ek ck kk wm xb">Resumen de tu reserva</h2>
+        <div id="resumen-datos"></div>
+        
+        <h3 class="ek ck kk wm xb">Método de pago</h3>
+        <div class="sb">
+            <div class="wb">
+                <label class="rc kk wm vb" for="tipo-tarjeta">Tipo de Tarjeta:</label>
+                <select
+                    id="tipo-tarjeta"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                >
+                    <option value="">Seleccionar...</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="otra">Otra</option>
+                </select>
+            </div>
+            
+            <div class="wb">
+                <label class="rc kk wm vb" for="numero-tarjeta">Número de Tarjeta:</label>
+                <input
+                    type="text"
+                    id="numero-tarjeta"
+                    placeholder="1234 5678 9012 3456"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+                <small class="error-message" id="error-tarjeta" style="color: red; display: none;"></small>
+            </div>
+            
+            <div class="wb">
+                <label class="rc kk wm vb" for="nombre-tarjeta">Nombre en la Tarjeta:</label>
+                <input
+                    type="text"
+                    id="nombre-tarjeta"
+                    placeholder="Como aparece en la tarjeta"
+                    class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                    required
+                />
+                <small class="error-message" id="error-nombre" style="color: red; display: none;"></small>
+            </div>
+            
+            <div class="wb" style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <label class="rc kk wm vb" for="fecha-expiracion">Fecha Expiración (MM/AA):</label>
+                    <input
+                        type="text"
+                        id="fecha-expiracion"
+                        placeholder="MM/AA"
+                        maxlength="5"
+                        class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                        required
+                    />
+                    <small class="error-message" id="error-fecha" style="color: red; display: none;"></small>
+                </div>
+                <div style="flex: 1;">
+                    <label class="rc kk wm vb" for="cvv">CVV:</label>
+                    <input
+                        type="text"
+                        id="cvv"
+                        maxlength="3"
+                        placeholder="123"
+                        class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
+                        required
+                    />
+                    <small class="error-message" id="error-cvv" style="color: red; display: none;"></small>
+                </div>
+            </div>
+            
+            <button type="button" id="finalizar-compra" class="vd rj ek rc rg gh lk ml il _l gi hi">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+    
+    <script src="compra.js" defer></script>
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+</div>
+    
+</section>
+    <!-- ===== Footer Start ===== -->
+    <footer class="GRUVi-footer">
+      <link rel="stylesheet" href="footer.css">
+      <div class="bb ze ki xn">
+        <!-- Footer inferior -->
+        <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+          <div class="animate_top">
+            <ul class="tc wf gg">
+              <ul class="tc wf gg">
+                <li><a href="#" class="xl footer-link" id="openModal">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+          <!-- Redes sociales -->
+      <div class="animate_top">
+        <a href="https://www.facebook.com/profile.php?id=61574228304083" class="footer-social">
+          <img src="images/icons8-facebook.svg" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/gruvi5?utm_source=qr" class="footer-social">
+          <img src="images/icons8-instagram.svg" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    
+          <div class="animate_top">
+            <p>&copy; 2025 GRUVi. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+      <div id="privacyModal" class="modal">
+        <div class="modal-content" style="max-width: 600px; max-height: 70vh; overflow-y: auto; padding: 20px; border-radius: 10px; text-align: justify; line-height: 1.6; background: #fff;">
+          <span class="close" id="closeModal" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+          <h2 style="text-align: center; margin-bottom: 15px;">Aviso de Privacidad</h2>
+          
+          <div class="modal-body">
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al acceder y utilizar el sitio web de <strong>GRUVi</strong> (en adelante, "el Sitio"), usted acepta cumplir con los siguientes Términos y Condiciones Generales...</p>
+      
+            <h3>2. Descripción del Servicio</h3>
+            <p>GRUVi es una plataforma en línea que proporciona información y servicios relacionados con el transporte urbano...</p>
+      
+            <h3>3. Uso del Sitio</h3>
+            <ul>
+              <li>Usted se compromete a utilizar el Sitio de manera responsable.</li>
+              <li>Queda prohibido el uso del Sitio para fines ilegales, fraudulentos o que puedan dañar su funcionalidad.</li>
+              <li>GRUVi se reserva el derecho de suspender el acceso a quienes incumplan estos términos.</li>
+            </ul>
+      
+            <h3>4. Registro y Cuentas de Usuario</h3>
+            <p>Algunas funcionalidades requieren la creación de una cuenta. Usted es responsable de mantener la confidencialidad de sus credenciales.</p>
+      
+            <h3>5. Propiedad Intelectual</h3>
+            <p>Todo el contenido del Sitio es propiedad de GRUVi y está protegido por leyes de propiedad intelectual.</p>
+      
+            <h3>6. Limitación de Responsabilidad</h3>
+            <p>El uso del Sitio es bajo su propio riesgo. GRUVi no será responsable por daños directos o indirectos derivados del uso del Sitio.</p>
+      
+            <h3>7. Enlaces a Terceros</h3>
+            <p>El Sitio puede contener enlaces a terceros. GRUVi no es responsable de su contenido ni de sus prácticas de privacidad.</p>
+      
+            <h3>8. Modificaciones</h3>
+            <p>GRUVi puede modificar estos términos en cualquier momento. Se recomienda revisarlos periódicamente.</p>
+      
+            <h3>9. Privacidad y Protección de Datos</h3>
+            <p>El uso del Sitio está sujeto a nuestra Política de Privacidad.</p>
+      
+            <h3>10. Ley Aplicable y Jurisdicción</h3>
+            <p>Estos términos se rigen por las leyes del país donde opera GRUVi.</p>
+      
+            <h3>11. Resolución de Conflictos</h3>
+            <p>GRUVi intentará resolver disputas de manera amistosa. Si no se logra, se acudirá a tribunales competentes.</p>
+      
+            <h3>12. Contacto</h3>
+            <p>Para consultas, visite la página de contacto en nuestro sitio web.</p>
+      
+            <p class="modal-date">📅 Fecha de entrada en vigor: <strong>13/03/2025</strong></p>
+          </div>
+        </div>
+      </div> 
+      
+      <script>
+      document.getElementById("openModal").addEventListener("click", function(event) {
+          event.preventDefault();
+          document.getElementById("privacyModal").style.display = "block";
+      });
+      
+      document.getElementById("closeModal").addEventListener("click", function() {
+          document.getElementById("privacyModal").style.display = "none";
+      });
+      
+      window.onclick = function(event) {
+          let modal = document.getElementById("privacyModal");
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      };
+      </script>
+    </footer>
     <!-- ===== Footer End ===== -->
 
     <!-- ====== Back To Top Start ===== -->
     <button
-  class="xc wf xf ie ld vg sr gh tr g sa ta _a"
-  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
-  :class="{ 'uc' : scrollTop }" style="background-color: #31b392; color: white;"
->
-  <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-  </svg>
-</button>
+    class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+    @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+    @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+    :class="{ 'uc' : scrollTop }" style="background-color: #1fddad; color: white;"
+  >
+    <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg>
+  </button>
     <!-- ====== Back To Top End ===== -->
   <script defer src="bundle.js"></script></body>
 </html>

@@ -46,24 +46,15 @@
       class="vd wo/4 sd qo f ho oo wf yf"
       :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
     >
-      <nav>
-        <ul class="tc _o sf yo cg ep">
-          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
-          <li><a href="boletos.html" class="xl">Boletos</a></li>
-          <li class="c i" x-data="{ dropdown: false }">
-            <a
-              href="#"
-              class="xl tc wf yf bg"
-              @click.prevent="dropdown = !dropdown"
-              :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
-            >
-              Reservas
-            </a>
-          </li>
-          <li><a href="nosotros.html" class="xl">Nosotros</a></li>
-          <li><a href="contacto.html" class="xl">Contacto</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="tc _o sf yo cg ep">
+        <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }" :class="{'b eh': darkMode === true}">Inicio</a></li>
+        <li><a href="boletos.html" class="xl">Boletos</a></li>
+        <li><a href="reservas.html" class="xl">Reservas</a></li>
+        <li><a href="nosotros.html" class="xl">Nosotros</a></li>
+        <li><a href="contacto.html" class="xl">Contacto</a></li>
+      </ul>
+    </nav>
 
       <div class="tc wf ig pb no">
         <div class="pc h io pa ra" :class="navigationOpen ? '!-ud-visible' : 'd'">

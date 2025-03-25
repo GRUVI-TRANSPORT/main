@@ -1,52 +1,49 @@
-/*GRUVi-footer */
-.GRUVi-footer a {
-    display: inline-block !important;
-    padding: 8px 15px !important;
-    color: #333 !important;
-    border-radius: 5px !important;
-    transition: background-color 0.3s ease !important;
-    font-family: Arial, sans-serif !important; /* Fuente */
-    font-size: 16px !important; /* Tamaño de texto */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos generales para el footer */
-.GRUVi-footer {
-    background-color: #f8f8f8; /* Color de fondo */
-    padding: 20px 0; /* Espaciado interno */
-    text-align: center; /* Centrar el contenido */
-    font-family: Arial, sans-serif; /* Fuente */
-  }
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+/* Estilos para los íconos de redes sociales */
+.footer-social {
+  margin: 0 10px; /* Espacio entre los íconos */
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social:hover {
+  transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
   
-  /* Contenedor principal */
-  .GRUVi-footer .bb.ze.ki.xn {
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar horizontalmente */
-    padding: 0 20px; /* Espaciado lateral */
-  }
-  
-  /* Footer inferior */
-  .GRUVi-footer .bh.ch.pm {
-    padding: 20px 0; /* Espaciado interno */
-    border-top: 1px solid #ddd; /* Línea divisoria (opcional) */
-  }
-  
-  /* Aviso de privacidad */
-  .GRUVi-footer .bh.ch.pm .tc.wf.gg a.xl {
-    color: #333; /* Color del texto */
-    text-decoration: none; /* Quitar subrayado */
-    transition: color 0.3s ease; /* Transición suave */
-  }
-  
-  .GRUVi-footer .bh.ch.pm .tc.wf.gg a.xl:hover {
-    color: #2fd1a9 !important; /* Cambiar color al pasar el mouse */
-  }
-  
-  /* Copyright */
-  .GRUVi-footer .bh.ch.pm p {
-    font-size: 14px; /* Tamaño de la fuente */
-    color: #666; /* Color del texto */
-    margin-top: 10px; /* Espacio arriba del texto */
-  }
-  .footer-link:hover {
-    color: #2fd1a9 !important; /* Cambiar color al pasar el mouse */
-  }
